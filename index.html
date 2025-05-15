@@ -1,251 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rahul Haroliya | Travel & Bike Rider</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Haroliya - The Bike Rider</title>
+  <link rel="icon" href="static/images/daman.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+    .navbar {
+      background-color: #000;
+    }
+    .navbar a {
+      color: #fff !important;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-inner .carousel-item {
+      transition: opacity 1s ease-in-out;
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #000;
+      padding: 2rem 0;
+      text-align: center;
+      color: #aaa;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        /* --- Global Styles --- */
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-            font-family: 'Poppins', sans-serif;
-        }
+    #imageModal .modal-content {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
 
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.75);
-            backdrop-filter: blur(8px);
-        }
+    #imageModal .modal-body {
+      padding: 0;
+    }
 
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-weight: 500;
-        }
-
-        /* --- Hero Carousel Section --- */
-        .hero {
-            position: relative;
-        }
-
-        .carousel-item img {
-            height: 600px;
-            object-fit: cover;
-        }
-
-        .carousel-caption {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 25px;
-            border-radius: 12px;
-        }
-
-        .carousel-caption h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .carousel-caption p {
-            font-size: 1.2rem;
-            color: #eee;
-        }
-
-        .carousel-caption .btn {
-            background-color: #ffcc00;
-            color: #121212;
-            font-weight: bold;
-            border-radius: 30px;
-            padding: 10px 25px;
-        }
-
-        .carousel-image {
-            height: 600px;
-            object-fit: cover;
-        }
-
-
-        /* --- Section Titles --- */
-        .section-title {
-            border-left: 5px solid #ff6f00;
-            padding-left: 10px;
-            font-size: 2rem;
-            font-weight: 600;
-            color: #ff6f00;
-            margin-bottom: 20px;
-        }
-
-        /* --- Gallery --- */
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        /* --- Footer --- */
-        footer {
-            background-color: #2e2e2e;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 50px;
-        }
-    </style>
+    #imageModal img {
+      border-radius: 8px;
+      max-height: 90vh;
+      width: 100%;
+      object-fit: contain;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Rahul Haroliya</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#routes">Routes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">Rahul Haroliya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION + CAROUSEL -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000" style="margin-top:56px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/images/daman.jpg" class="d-block w-100 img-fluid" alt="Daman" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">Rahul Haroliya - The Bike Rider</h2>
+          <p>Exploring the roads less traveled. Join the journey!</p>
         </div>
-    </nav>
-
-    <!-- Hero Section with Carousel -->
-    <header class="hero">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="static/images/daman.jpg" class="d-block w-100 carousel-image" alt="..." />
-                    <div
-                        class="carousel-caption position-absolute top-50 start-50 translate-middle text-center text-light">
-                        <h1>Exploring the World on Two Wheels</h1>
-                        <p class="lead mt-3">Join me, Rahul Haroliya, on a thrilling journey...</p>
-                        <a href="#about" class="btn btn-warning">Discover More</a>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="static/images/bike.jpg" class="d-block w-100 carousel-image" alt="..." />
-                    <div
-                        class="carousel-caption position-absolute top-50 start-50 translate-middle text-center text-light">
-                        <h1>Exploring the World on Two Wheels</h1>
-                        <p class="lead mt-3">Join me, Rahul Haroliya, on a thrilling journey...</p>
-                        <a href="#about" class="btn btn-warning">Discover More</a>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="static/images/bike rider.jpg" class="d-block w-100 carousel-image" alt="..." />
-                    <div
-                        class="carousel-caption position-absolute top-50 start-50 translate-middle text-center text-light">
-                        <h1>Exploring the World on Two Wheels</h1>
-                        <p class="lead mt-3">Join me, Rahul Haroliya, on a thrilling journey...</p>
-                        <a href="#about" class="btn btn-warning">Discover More</a>
-                    </div>
-                </div>
-
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/IMG_20250515_171628.jpg" class="d-block w-100 img-fluid" alt="Adventure" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">Adventure Awaits</h2>
+          <p>From mountains to beaches, wheels keep rolling.</p>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2 class="section-title">About Me</h2>
-        <p>I’m Rahul Haroliya — a passionate biker and traveler who explores nature, culture, and life through
-            motorcycle journeys. Every ride is a story, and every road is a new beginning. Let's embark on this ride
-            together!</p>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container py-5">
-        <h2 class="section-title">Gallery</h2>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="../rahul haroliya/static/images/daman.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="../rahul haroliya/static/images/daman.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="../rahul haroliya/static/images/daman.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="../rahul haroliya/static/images/daman.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/IMG_20250515_171718.jpg" class="d-block w-100 img-fluid" alt="Ride with Passion" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">Ride with Passion</h2>
+          <p>Every mile is a memory. Let’s create some.</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Routes Section -->
-    <section id="routes" class="container py-5">
-        <h2 class="section-title">My Routes</h2>
-        <p>From the snow-covered Himalayas to the sunlit coasts of Kerala, I’ve mapped unforgettable paths. Each route
-            brings challenges, beauty, and the thrill of adventure. Join me on these epic journeys.</p>
-    </section>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
 
-    <!-- Blog Section -->
-    <section id="blog" class="container py-5">
-        <h2 class="section-title">Blog</h2>
-        <p>Read about my rides, gear reviews, survival tips, and life-changing moments on the road. I share everything I
-            learn to help fellow riders on their journey!</p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="mb-4 text-center">About Rahul</h2>
+      <p class="text-center">
+        Rahul Haroliya is not just a bike rider—he's a passionate adventurer with a relentless spirit for exploring the unbeaten paths.
+        From winding mountain roads to serene coastal highways, Rahul’s journeys are fueled by his love for freedom and the thrill of discovery.
+      </p>
+      <p class="text-center">
+        Every ride is more than just a trip; it’s a story waiting to be told, a memory to be cherished.
+        With his trusted bike as a companion, Rahul inspires others to break free from routine and embrace the open road.
+      </p>
+      <p class="text-center">
+        Join Rahul as he shares breathtaking landscapes, heartfelt moments, and tips for fellow riders seeking the ultimate biking experience.
+        His mission? To ignite the wanderer in all of us and prove that the best journeys are those that challenge and change us.
+      </p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5">
-        <h2 class="section-title">Contact Me</h2>
-        <p>Enter your Phone to reach me : <input type="text"></p>
-        <p>Enter your Email to reach me : <input type="text"></p>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Gallery</h2>
+      <div class="row g-3 gallery">
 
-    </section>
+        <div class="col-md-4">
+          <img src="static/images/bike rider.jpg" alt="Ride 1"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/bike rider.jpg" />
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Rahul Haroliya. All rights reserved.</p>
-    </footer>
+        <div class="col-md-4">
+          <img src="static/images/daman.jpg" alt="Ride 2"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/daman.jpg" />
+        </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-md-4">
+          <img src="static/images/bike.jpg" alt="Ride 3"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/bike.jpg" />
+        </div>
+
+        <div class="col-md-4">
+          <img src="static/images/IMG_20250515_171628.jpg" alt="Ride 4"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/IMG_20250515_171628.jpg" />
+        </div>
+
+        <div class="col-md-4">
+          <img src="static/images/IMG_20250515_171718.jpg" alt="Ride 5"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/IMG_20250515_171718.jpg" />
+        </div>
+
+        <div class="col-md-4">
+          <img src="static/images/IMG_20250515_172835.jpg" alt="Ride 6"
+               class="img-fluid rounded shadow-sm gallery-img"
+               data-bs-toggle="modal" data-bs-target="#imageModal"
+               data-bs-src="static/images/IMG_20250515_172835.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for full image view -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="Full Size" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Get in Touch</h2>
+      <p>Follow Rahul on social media or send a direct message.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/rahulharoliya1/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/rahul.haroliya.18/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/916357087712" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rahul Haroliya. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll to top on page load
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 0);
+    });
+
+    // Change modal image source dynamically
+    document.querySelectorAll('.gallery-img').forEach(img => {
+      img.addEventListener('click', function () {
+        const src = this.getAttribute('data-bs-src');
+        document.getElementById('modalImage').src = src;
+      });
+    });
+  </script>
 </body>
-
 </html>
