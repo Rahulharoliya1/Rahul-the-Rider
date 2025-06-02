@@ -1,53 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Join Rahul Haroliya on his epic bike trip to Ladakh. Experience the mountains, the thrill, and the beauty of adventure on two wheels." />
-    <meta name="keywords" content="Bike Trip, Ladakh, Rahul Haroliya, Adventure Travel, Motorcycle Road Trip" />
-    <meta name="author" content="Rahul Haroliya" />
-    <title>Bike Trip to Ladakh – A Dream Ride | Rahul Haroliya</title>
-    <link rel="stylesheet" href="/Rahul-the-Rider/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read travel stories, tips, and experiences by Rahul Haroliya – your travel companion on two wheels." />
+  <meta name="keywords" content="Bike Trips Blog, Travel Stories, Ladakh Ride, Pangong Lake, Bike Packing Tips, Rahul Haroliya" />
+  <meta name="author" content="Rahul Haroliya" />
+  <title>Travel Blog | Rahul Haroliya</title>
+  <link rel="stylesheet" href="/Rahul-the-Rider/style.css" />
+  <style>
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-card-content {
+      padding: 15px;
+    }
+
+    .blog-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .blog-card p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bike Trip to Ladakh – A Dream Ride</h1>
-        <p>by Rahul Haroliya | June 2, 2025</p>
-    </header>
+  <header>
+    <h1>Rahul Haroliya’s Travel Blog</h1>
+    <p>Real stories, riding tips, and breathtaking journeys.</p>
+  </header>
 
-    <main>
-        <article>
-            <img src="static/images/ladakh-trip.jpg" alt="Rahul Haroliya on bike in Ladakh" style="width:100%; height:auto;" />
-            <p>
-                Riding to Ladakh had always been my dream. The vast landscapes, snow-covered passes, and the thrill of riding at high altitudes had a magnetic pull on me. In May 2025, that dream finally came true.
-            </p>
+  <main>
+    <div class="blog-list">
+      
+      <div class="blog-card">
+        <img src="static/images/ladakh-trip.jpg" alt="Bike in Ladakh">
+        <div class="blog-card-content">
+          <h3>Bike Trip to Ladakh – A Dream Ride</h3>
+          <p>Snow, mountains, and endless roads – my dream ride to Ladakh finally came true.</p>
+          <a href="/Rahul-the-Rider/ladakh-trip.html">Read More →</a>
+        </div>
+      </div>
 
-            <h2>Preparation</h2>
-            <p>
-                Preparing for a Ladakh ride is no joke. From getting my bike serviced to packing the right gear, it took me weeks. I ensured I had essentials like a first-aid kit, tool kit, waterproof gloves, and a power bank.
-            </p>
+      <div class="blog-card">
+        <img src="static/images/packing-checklist.jpg" alt="Packing items for bike trip">
+        <div class="blog-card-content">
+          <h3>Top 5 Things to Pack for a Bike Trip</h3>
+          <p>Heading for a ride? Don’t miss these 5 must-have items that can save your trip.</p>
+          <a href="/Rahul-the-Rider/top-5-things-to-pack.html">Read More →</a>
+        </div>
+      </div>
 
-            <h2>The Journey</h2>
-            <p>
-                Starting from Ahmedabad to Delhi, then I took the Manali-Leh highway. Rohtang Pass welcomed me with snow and biting cold. By the time I reached Leh, I had crossed breathtaking landscapes – rivers, barren lands, and snowy mountains.
-            </p>
+      <div class="blog-card">
+        <img src="static/images/pangong-lake.jpg" alt="Pangong Lake view">
+        <div class="blog-card-content">
+          <h3>Pangong Lake: Travel Tips & My Story</h3>
+          <p>Peace, beauty, and challenges – my ride to Pangong Lake was unforgettable.</p>
+          <a href="/Rahul-the-Rider/pangong-lake-story.html">Read More →</a>
+        </div>
+      </div>
 
-            <h2>Magical Moments</h2>
-            <p>
-                Pangong Lake was a highlight. Its serene blue waters with mountains in the background felt like a painting. Camping under the stars there is an experience I’ll never forget.
-            </p>
+    </div>
+  </main>
 
-            <h2>Why You Should Do It</h2>
-            <p>
-                If you love biking and adventure, Ladakh is a must. It challenges you, teaches you patience, and rewards you with nature’s raw beauty. Just be prepared, respect local culture, and ride responsibly.
-            </p>
-        </article>
-
-        <a href="/Rahul-the-Rider/blog.html">&larr; Back to Blog</a>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Rahul Haroliya. All rights reserved.</p>
-    </footer>
+  <footer style="text-align:center; margin-top:50px; color:#777;">
+    <p>&copy; 2025 Rahul Haroliya. All rights reserved.</p>
+  </footer>
 </body>
 </html>
