@@ -5,15 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rahul Haroliya’s Travel Blog</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .blog {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .blog h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .blog p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #666;
+    }
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card h2 {
+      font-size: 22px;
+      padding: 16px;
+      margin: 0;
+      color: #222;
+    }
+    .blog-card p {
+      padding: 0 16px;
+      font-size: 15px;
+      color: #666;
+    }
+    .blog-card a {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <main class="blog">
     <h1>Rahul Haroliya’s Travel Blog</h1>
-    <p>Real stories, riding tips, and breathtaking journeys.</p>
+    <p>Real stories, riding tips, and breathtaking journeys from Ahmedabad to the Himalayas!</p>
 
     <div class="blog-container">
+      
+      <!-- Manali Blog -->
+      <div class="blog-card">
+        <img src="static/images/manali-bike.jpg" alt="Manali Bike Trip">
+        <h2>मनाली बाइक ट्रिप की पूरी गाइड</h2>
+        <p>अहमदाबाद से मनाली तक की शानदार बाइक यात्रा, खर्चे, रास्ते और जरूरी टिप्स।</p>
+        <a href="blog/manali-bike-trip.html">Read More →</a>
+      </div>
 
-      <!-- Post 1 -->
+      <!-- Ladakh -->
       <div class="blog-card">
         <img src="static/images/ladakh-trip.jpg" alt="Bike Trip to Ladakh" />
         <h2>Bike Trip to Ladakh – A Dream Ride</h2>
@@ -21,7 +96,7 @@
         <a href="ladakh-trip.html">Read More →</a>
       </div>
 
-      <!-- Post 2 -->
+      <!-- Packing Tips -->
       <div class="blog-card">
         <img src="static/images/packing-items.jpg" alt="Packing items for bike trip" />
         <h2>Top 5 Things to Pack for a Bike Trip</h2>
@@ -29,22 +104,13 @@
         <a href="packing-items.html">Read More →</a>
       </div>
 
-      <!-- Post 3 -->
+      <!-- Pangong Lake -->
       <div class="blog-card">
-       <img src="static/images/pangong-lake.jpg" alt="Pangong Lake view" />
+        <img src="static/images/pangong-lake.jpg" alt="Pangong Lake view" />
         <h2>Pangong Lake: Travel Tips & My Story</h2>
         <p>Peace, beauty, and challenges – my ride to Pangong Lake was unforgettable.</p>
         <a href="pangong-lake.html">Read More →</a>
       </div>
-      
-<!-- Post 4 -->
-<div class="blog-card">
-  <img src="static/images/manali-bike-trip.jpg" alt="Manali Bike Trip" />
-  <h2>मनाली बाइक ट्रिप की पूरी गाइड</h2>
-  <p>अहमदाबाद से शुरू हुई हमारी बाइक यात्रा दिल्ली होते हुए मनाली तक – खर्चा, रास्ता और ज़रूरी सुझावों के साथ।</p>
-  <a href="blog/manali-bike-trip.html">Read More →</a>
-</div>
-
 
     </div>
 
