@@ -307,6 +307,14 @@
         document.getElementById('modalImage').src = src;
       });
     });
-  </script>
+<script>
+  const colors = ["#ff6b6b", "#6bc5ff", "#51ffae", "#feca57", "#a29bfe", "#ff9ff3", "#00d2d3", "#d980fa"];
+  function changeBackground() {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+  }
+  changeBackground();
+  setInterval(changeBackground, 4000);
+</script>
 </body>
 </html>
