@@ -1,3 +1,6 @@
+# Load the current blog HTML content
+blog_html_path = Path("/mnt/data/index-blog.html")
+blog_html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +82,14 @@
     <p>Real stories, riding tips, and breathtaking journeys from Ahmedabad to the Himalayas!</p>
 
     <div class="blog-container">
+
+      <div class="blog-card">
+        <img src="static/images/biking-routes.jpg" alt="Top Biking Routes in India" />
+        <h2>भारत के टॉप 5 बाइकिंग रूट्स</h2>
+        <p>भारत के सबसे रोमांचक और खूबसूरत बाइक राइडिंग रूट्स की जानकारी एक ही जगह।</p>
+        <a href="blog/top-biking-routes.html">Read More →</a>
+      </div>
+
       <!-- Manali Blog -->
       <div class="blog-card">
         <img src="static/images/manali-bike.jpg" alt="Manali Bike Trip">
@@ -135,3 +146,8 @@
   </footer>
 </body>
 </html>
+"""
+
+# Save the updated blog HTML page
+blog_html_path.write_text(blog_html_content, encoding="utf-8")
+blog_html_path.name
