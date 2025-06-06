@@ -329,13 +329,71 @@
   <section id="contact" class="py-5 bg-dark text-white text-center">
     <h2>Get in Touch</h2>
     <p>📧 Email: <a href="mailto:rahulharoliya1@gmail.com" style="color:#0dcaf0;">rahulharoliya1@gmail.com</a></p>
-    <div class="social-icons mt-3">
-      <a href="https://www.instagram.com/rahulharoliya1/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/rahul.haroliya.18/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/rahulharoliya1" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://linkedin.com/in/rahulharoliya1" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </section>
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-dymI1kDbwUO2lFlv5LGtA7sIlv/tTWfYc0gJgJ2o9eUHFkA5c05Gk5HgRTuOmVuF8o9vVZ2IPM6Z8+7DqEuhIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: #222;
+      border-radius: 50%;
+      color: white;
+      font-size: 2rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      cursor: pointer;
+      perspective: 800px;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      transform: rotateX(20deg) rotateY(20deg) scale(1.25);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+      background: linear-gradient(45deg, #0dcaf0, #6610f2);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Follow Rahul Haroliya</h1>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/rahulharoliya1/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/rahul.haroliya.18/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/rahulharoliya1" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/in/rahulharoliya1" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</body>
 
   <!-- Footer -->
   <footer>
