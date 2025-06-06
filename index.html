@@ -55,10 +55,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
 
   <style>
+    /* 3D perspective for the whole page */
     body {
       font-family: 'Rajdhani', sans-serif;
       color: #eee;
       transition: background-color 2s ease-in-out;
+      perspective: 1000px;
+      background-color: #111;
     }
 
     .navbar {
@@ -67,6 +70,14 @@
 
     .navbar a {
       color: #fff !important;
+      display: inline-block;
+      transition: transform 0.3s ease;
+      transform-style: preserve-3d;
+    }
+
+    .navbar a:hover {
+      transform: rotateX(10deg) translateZ(10px);
+      color: #0dcaf0 !important;
     }
 
     .carousel-item img {
@@ -74,6 +85,12 @@
       height: 80vh;
       object-fit: cover;
       transition: transform 0.5s ease-in-out;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .carousel-item img:hover {
+      transform: rotateY(15deg) translateZ(40px) scale(1.05);
     }
 
     .carousel-caption {
@@ -87,12 +104,15 @@
       height: 300px;
       object-fit: cover;
       border-radius: 12px;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease-in-out;
       cursor: pointer;
+      transform-style: preserve-3d;
+      box-shadow: none;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: rotateY(-10deg) translateZ(30px) scale(1.07);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
 
     footer {
@@ -126,22 +146,21 @@
       object-fit: contain;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .social-links a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+    }
+    .social-links a img:hover {
+      transform: scale(1.2);
+    }
   </style>
-    <style>
-.social-links {
-  display: flex;
-  gap: 15px;
-  margin: 20px 0;
-}
-.social-links a img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-}
-.social-links a img:hover {
-  transform: scale(1.2);
-}
-</style>
 
 </head>
 <body>
@@ -224,10 +243,10 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
     </div>
   </section>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6808386970743856"
      crossorigin="anonymous"></script>
 <!-- rahul ads -->
