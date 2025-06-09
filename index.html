@@ -31,6 +31,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rahul Haroliya - The Joker Rider</title>
+   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Sliding Text CSS */
+    .sliding-text {
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+      color: #fff;
+      padding: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+
+    .sliding-text p {
+      display: inline-block;
+      padding-right: 100%;
+      animation: slideRightToLeft 15s linear infinite;
+    }
+
+    @keyframes slideRightToLeft {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sliding Text Section -->
+  <div class="sliding-text">
+    <p>👋 RAHUL HAROLIYA - The Joker Rider</p>
+  </div>
+
 
   <!-- Meta and Ads -->
   <meta name="google-adsense-account" content="ca-pub-6808386970743856">
