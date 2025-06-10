@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Haroliya - The Joker Rider</title>
+  
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -28,9 +32,7 @@
   gtag('config', 'G-60BR67PZHX');
 </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rahul Haroliya - The Joker Rider</title>
+  
 
   <style>
     /* Sliding Text CSS */
@@ -377,23 +379,14 @@
     <p>&copy; 2025 Rahul Haroliya. All rights reserved. | <a href="privacy-policy.html" style="color: #aaa;">Privacy Policy</a></p>
   </footer>
 
-  <!-- Scripts -->
+   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Modal Image
-    document.querySelectorAll('.gallery-img').forEach(img => {
-      img.addEventListener('click', function () {
-        document.getElementById('modalImage').src = this.getAttribute('data-bs-src');
-      });
-    });
-
-    // Background color changer
-    const colors = ['#111', '#1a1a2e', '#16213e', '#0f3460', '#533483', '#2c3e50'];
-    let current = 0;
-
+    // Funky Light Background Colors
+    const funkyColors = ['#fce38a', '#f38181', '#eaffd0', '#b5ead7', '#ffdac1', '#c7ceea', '#d5f4e6', '#ffb6b9'];
     setInterval(() => {
-      document.body.style.backgroundColor = colors[current];
-      current = (current + 1) % colors.length;
+      const randomColor = funkyColors[Math.floor(Math.random() * funkyColors.length)];
+      document.body.style.backgroundColor = randomColor;
     }, 4000);
   </script>
 </body>
