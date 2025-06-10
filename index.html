@@ -36,34 +36,36 @@
     /* Sliding Text CSS */
     .sliding-text {
       width: 100%;
-      overflow: hidden;
-      background: #000;
-      color: #fff;
-      padding: 10px 0;
-      font-size: 20px;
-      font-weight: bold;
-      white-space: nowrap;
-      box-sizing: border-box;
-      margin-top: 20px;
-    }
-
-    .sliding-text p {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+    .sliding-text span {
       display: inline-block;
       padding-right: 100%;
       animation: slideRightToLeft 15s linear infinite;
     }
 
     @keyframes slideRightToLeft {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+      0% { 
+       transform: translateX(0%);
+      }
+      100% { 
+        transform: translateX(-100%);
+      }
     }
   </style> 
 </head>
 <body>
   <!-- Sliding Text Section -->
-  <div class="sliding-text">
-    <p>RAHUL HAROLIYA - The Joker Rider</p>
-  </div>
+  <div class="sliding-text"><span>RAHUL HAROLIYA - The Joker Rider</span></div>
+  <!-- Rest of the content -->
+</body>
   <!-- Meta and Ads -->
   <meta name="google-adsense-account" content="ca-pub-6808386970743856">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6808386970743856" crossorigin="anonymous"></script>
