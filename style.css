@@ -103,4 +103,14 @@ footer {
 #heroCarousel {
   margin-top: 0px !important;
 }
+body {
+  padding-top: 0 !important;
+}
 
+.hero-section,
+#heroCarousel,
+.carousel,
+.carousel-inner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
