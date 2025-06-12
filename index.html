@@ -223,6 +223,7 @@
       <a class="navbar-brand fw-bold text-white" href="#">Rahul Haroliya</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -392,6 +393,12 @@
   <footer>
     <p>&copy; 2025 Rahul Haroliya. All rights reserved. | <a href="privacy-policy.html" style="color: #aaa;">Privacy Policy</a></p>
   </footer>
-
+<script>
+  const myCarousel = document.querySelector('#heroCarousel');
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    ride: 'carousel'
+  });
+</script>
 </body>
 </html>
