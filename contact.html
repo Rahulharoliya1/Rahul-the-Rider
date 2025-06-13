@@ -35,23 +35,33 @@
     <p class="text-center">Have a project, idea, or just want to say hello? Fill the form below and I'll get back to you soon!</p>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <form action="https://formspree.io/f/xjkrwzra" method="POST">
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" name="name" required />
+        <div class="row">
+  <div class="col-md-6">
+    <h4>Contact via Form</h4>
+    <form action="https://formspree.io/f/xjkrwzra" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" name="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" name="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" name="message" rows="5" required></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6">
+            <h4>Contact via Email</h4>
+            <p>If you prefer using your email app, click below:</p>
+            <a href="mailto:rahulharoliya1@gmail.com" class="btn btn-outline-primary btn-lg">Email Us</a>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" name="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" name="message" rows="5" required></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
