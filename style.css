@@ -103,6 +103,10 @@ footer {
 #heroCarousel {
   margin-top: 0px !important;
 }
+.carousel-item img {
+  height: 85vh;
+  object-fit: cover;
+}
 body {
   padding-top: 0 !important;
 }
