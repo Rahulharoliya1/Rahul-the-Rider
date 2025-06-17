@@ -1,0 +1,12 @@
+User-agent: *
+Disallow:
+
+Crawl-delay: 10
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://rahulharoliya1.site/sitemap.xml
