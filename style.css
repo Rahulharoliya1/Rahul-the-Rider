@@ -118,12 +118,11 @@ body {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
-<style>
-  #typed-text {
-    font-size: 28px;
-    color: white;
-    font-weight: 500;
-    margin-top: 10px;
-    min-height: 40px;
-  }
-</style>
+#typed-text {
+  font-size: 28px;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+  min-height: 40px;
+}
+
