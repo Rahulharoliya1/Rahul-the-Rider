@@ -26,6 +26,12 @@
     enable_page_level_ads: true
   });
 </script>
+
+  <!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   
   <!-- Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -371,70 +377,56 @@
     <div class="row g-3 gallery">
 
       <div class="col-md-4">
-        <img src="static/images/bike rider.jpg" alt="Ride 1"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/bike rider.jpg"
-          loading="lazy" />
+        <a href="static/images/bike rider.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 1">
+          <img src="static/images/bike rider.jpg" alt="Ride 1"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
       <div class="col-md-4">
-        <img src="static/images/daman.jpg" alt="Ride 2"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/daman.jpg"
-          loading="lazy" />
+        <a href="static/images/daman.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 2">
+          <img src="static/images/daman.jpg" alt="Ride 2"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
       <div class="col-md-4">
-        <img src="static/images/bike.jpg" alt="Ride 3"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/bike.jpg"
-          loading="lazy" />
+        <a href="static/images/bike.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 3">
+          <img src="static/images/bike.jpg" alt="Ride 3"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
       <div class="col-md-4">
-        <img src="static/images/IMG_20250515_171628.jpg" alt="Ride 4"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/IMG_20250515_171628.jpg"
-          loading="lazy" />
+        <a href="static/images/IMG_20250515_171628.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 4">
+          <img src="static/images/IMG_20250515_171628.jpg" alt="Ride 4"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
       <div class="col-md-4">
-        <img src="static/images/IMG_20250515_171718.jpg" alt="Ride 5"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/IMG_20250515_171718.jpg"
-          loading="lazy" />
+        <a href="static/images/IMG_20250515_171718.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 5">
+          <img src="static/images/IMG_20250515_171718.jpg" alt="Ride 5"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
       <div class="col-md-4">
-        <img src="static/images/IMG_20250515_172835.jpg" alt="Ride 6"
-          class="img-fluid rounded shadow-sm gallery-img"
-          data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-src="static/images/IMG_20250515_172835.jpg"
-          loading="lazy" />
+        <a href="static/images/IMG_20250515_172835.jpg" class="glightbox" data-gallery="gallery1" data-title="Ride 6">
+          <img src="static/images/IMG_20250515_172835.jpg" alt="Ride 6"
+            class="img-fluid rounded shadow-sm gallery-img"
+            loading="lazy" />
+        </a>
       </div>
 
     </div>
   </div>
 </section>
-
-<!-- Modal for full image view -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-header border-0">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <img id="modalImage" src="" class="img-fluid rounded shadow" alt="Full Size" />
-      </div>
-    </div>
-  </div>
-</div>
 
     <!-- Contact Section -->
 <section id="contact" class="py-5">
@@ -482,17 +474,13 @@
 </script>
      <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-<script>
-  const imageModal = document.getElementById('imageModal');
-  const modalImage = document.getElementById('modalImage');
 
-  imageModal.addEventListener('show.bs.modal', function (event) {
-    const triggerImg = event.relatedTarget;
-    const src = triggerImg.getAttribute('data-bs-src');
-    const alt = triggerImg.getAttribute('alt');
-    modalImage.src = src;
-    modalImage.alt = alt;
+    <script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true
   });
 </script>
 </body>
