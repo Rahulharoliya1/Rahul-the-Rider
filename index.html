@@ -397,17 +397,19 @@
     </div>
   </section>
 
-    <!-- Contact Section -->
+   <!-- Contact Section -->
 <section id="contact" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Get in Touch</h2>
     <p class="text-center">
       📧 Email: <a href="mailto:rahulharoliya1@gmail.com">rahulharoliya1@gmail.com</a>
     </p>
-    <p class="text-center">Have a project, idea, or just want to say hello? Fill the form below and I'll get back to you soon!</p>
+    <p class="text-center">
+      Have a project, idea, or just want to say hello? Fill the form below and I'll get back to you soon!
+    </p>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <form action="https://formspree.io/f/xjkrwzra" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xjkrwzra" method="POST">
           <div class="mb-3">
             <input type="text" class="form-control" name="name" placeholder="Your Name" required />
           </div>
@@ -421,6 +423,8 @@
             <button type="submit" class="btn btn-primary">Send Message</button>
           </div>
         </form>
+        <!-- ✅ Status message will show here -->
+        <p id="form-status" class="mt-3 text-center fw-bold"></p>
       </div>
     </div>
   </div>
@@ -449,6 +453,29 @@
     mediumZoom('.gallery a img', {
       margin: 24,
       background: 'rgba(0,0,0,0.8)'
+    });
+  </script>
+ <!-- ✅ Contact Form Script -->
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        status.innerHTML = "✅ Message sent successfully!";
+        status.style.color = "green";
+        form.reset();
+      } else {
+        status.innerHTML = "❌ Oops! Something went wrong. Please try again.";
+        status.style.color = "red";
+      }
     });
   </script>
 </body>
