@@ -21,12 +21,13 @@
       "jobTitle": "Bike Rider | Creator | Photographer",
       "worksFor": {
         "@type": "Organization",
-        "name": "Rahul Haroliya - Bike Rider"
+        "@id": "https://rahulharoliya1.site/#organization",
+        "name": "Rahul Haroliya Official"
       },
       "sameAs": [
         "https://www.instagram.com/rahulharoliya1/",
         "https://www.linkedin.com/in/rahulharoliya/",
-  "https://www.facebook.com/rahul.haroliya.18",
+        "https://www.facebook.com/rahul.haroliya.18",
         "https://www.youtube.com/@rahulharoliya"
       ],
       "address": {
@@ -43,6 +44,7 @@
       ],
       "description": "Rahul Haroliya is a passionate bike rider, content creator, and photographer from Ahmedabad, India. Known as 'The Joker Rider', he shares travel, adventure, and creator lifestyle content."
     },
+
     {
       "@type": "Organization",
       "@id": "https://rahulharoliya1.site/#organization",
@@ -52,15 +54,24 @@
       "sameAs": [
         "https://www.instagram.com/rahulharoliya1/",
         "https://www.linkedin.com/in/rahulharoliya/",
+        "https://www.facebook.com/rahul.haroliya.18",
         "https://www.youtube.com/@rahulharoliya"
       ]
     },
+
     {
       "@type": "WebSite",
       "@id": "https://rahulharoliya1.site/#website",
       "url": "https://rahulharoliya1.site/",
       "name": "Rahul Haroliya – The Joker Rider",
-      "publisher": { "@id": "https://rahulharoliya1.site/#organization" }
+      "publisher": {
+        "@id": "https://rahulharoliya1.site/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rahulharoliya1.site/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 }
