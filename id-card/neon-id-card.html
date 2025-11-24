@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Haroliya - Ultra-Cinematic Neon ID Card</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, #0d0d0d, #000 85%);
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  background: #111;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 0 20px #f1c40f, 0 0 40px #f1c40f50, 0 0 60px #f1c40f30;
+  animation: glow 2s infinite alternate;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px #f1c40f, 0 0 40px #f1c40f50, 0 0 60px #f1c40f30; }
+  50% { box-shadow: 0 0 30px #f1c40f, 0 0 60px #f1c40f60, 0 0 90px #f1c40f40; }
+  100% { box-shadow: 0 0 20px #f1c40f, 0 0 40px #f1c40f50, 0 0 60px #f1c40f30; }
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #f1c40f;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #f1c40f;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #f1c40f;
+  text-shadow: 0 0 5px #f1c40f, 0 0 15px #f1c40f80;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 0 3px #f1c40f30;
+}
+
+.links a {
+  display: inline-block;
+  margin: 12px 8px 0;
+  text-decoration: none;
+  color: #f1c40f;
+  border: 1px solid #f1c40f;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-shadow: 0 0 5px #f1c40f;
+}
+
+.links a:hover {
+  background: #f1c40f;
+  color: #111;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #f1c40f, 0 0 50px #f1c40f80;
+}
+
+.bike-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bike {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  left: -60px;
+  bottom: 0;
+  filter: drop-shadow(0 0 10px #f1c40f);
+}
+
+/* Neon trails */
+.trail {
+  position: absolute;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(241,196,15,0.9), rgba(241,196,15,0));
+  bottom: 22px;
+  left: -50px;
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
+/* Sparks */
+.spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f1c40f;
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+/* Background animated lines */
+.bg-lines {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(241,196,15,0.05),
+    rgba(241,196,15,0.05) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  z-index: -1;
+  animation: moveLines 4s linear infinite;
+}
+
+@keyframes moveLines {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
+</style>
+</head>
+<body>
+<div class="bg-lines"></div>
+
+<div class="card">
+  <img src="https://i.ibb.co/3mGdF9Z/profile.jpg" alt="Rahul Haroliya" class="profile-pic">
+  <h1>Rahul Haroliya</h1>
+  <p>Bike Rider • Ahmedabad</p>
+  <p>Hero Passion Pro BS6</p>
+
+  <div class="links">
+    <a href="https://instagram.com/rahulharoliya1" target="_blank">Instagram</a>
+    <a href="https://facebook.com/rahul.haroliya.18" target="_blank">Facebook</a>
+    <a href="https://rahulharoliya1.site" target="_blank">Website</a>
+  </div>
+
+  <div class="bike-container">
+    <div class="trail"></div>
+    <img src="https://i.ibb.co/3RN4k9X/bike.png" alt="Bike" class="bike">
+  </div>
+</div>
+
+<script>
+const bike = document.querySelector('.bike');
+const trail = document.querySelector('.trail');
+const card = document.querySelector('.card');
+
+const sparks = [];
+for(let i=0;i<30;i++){
+  const spark = document.createElement('div');
+  spark.classList.add('spark');
+  document.body.appendChild(spark);
+  sparks.push(spark);
+}
+
+let pos = -60;
+let speed = 2;
+
+const moveBike = () => {
+  pos += speed;
+  if(pos > 360) pos = -60;
+  bike.style.left = pos + 'px';
+  trail.style.left = (pos-50) + 'px';
+
+  // Generate sparks randomly for cinematic flow
+  sparks.forEach(s => {
+    if(Math.random() < 0.04) {
+      s.style.left = pos + Math.random()*20 + 'px';
+      s.style.bottom = 20 + Math.random()*20 + 'px';
+      s.style.opacity = 1;
+    }
+    s.style.opacity *= 0.90;
+  });
+
+  requestAnimationFrame(moveBike);
+}
+
+// Hover interaction
+card.addEventListener('mouseenter', () => {
+  speed = 6;
+  trail.style.filter='blur(14px)';
+});
+card.addEventListener('mouseleave', () => {
+  speed = 2;
+  trail.style.filter='blur(10px)';
+});
+
+moveBike();
+</script>
+</body>
+</html>
