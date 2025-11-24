@@ -289,6 +289,11 @@
     .social-links a img:hover {
       transform: scale(1.2);
     }
+    /* Modal Styling */
+    #neonModal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000a; justify-content:center; align-items:center; z-index:1000; }
+    #neonModal .card { background:#111; border-radius:20px; padding:30px; text-align:center; width:350px; box-shadow:0 0 20px #f1c40f,0 0 40px #f1c40f50; }
+    #neonModal .links a { display:block; margin:10px 0; color:#f1c40f; border:1px solid #f1c40f; padding:8px; border-radius:8px; text-decoration:none; transition:0.3s; }
+    #neonModal .links a:hover { background:#f1c40f; color:#111; }
   </style>
 </head>
   
@@ -334,6 +339,10 @@
       <a href="#gallery" class="btn btn-outline-light btn-lg m-2">🖼️ गैलरी देखें</a>
       <a href="#contact" class="btn btn-info btn-lg m-2 text-white">📬 संपर्क करें</a>
     </div>
+    
+    <!-- Neon ID Card Button -->
+    <div class="text-center my-4">
+      <button id="openNeon" class="btn btn-neon btn-lg">🌟 Neon ID Card देखें</button>
   </div>
 </section>
 
@@ -502,7 +511,29 @@
   <footer>
     <p>&copy; 2025 Rahul Haroliya. All rights reserved. | <a href="privacy-policy.html" style="color: #aaa;">Privacy Policy</a></p>
   </footer>
+    
+<!-- Neon ID Card Modal -->
+  <div id="neonModal">
+    <div class="card">
+      <img src="https://i.ibb.co/3mGdF9Z/profile.jpg" alt="Rahul Haroliya" class="profile-pic">
+      <h1 style="color:#f1c40f;">Rahul Haroliya</h1>
+      <p>Bike Rider • Ahmedabad</p>
+      <p>Hero Passion Pro BS6</p>
+      <div class="links">
+        <a href="https://instagram.com/rahulharoliya1" target="_blank">Instagram</a>
+        <a href="https://facebook.com/rahul.haroliya.18" target="_blank">Facebook</a>
+        <a href="https://rahulharoliya1.site" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
 
+  <!-- Neon ID Card JS -->
+  <script>
+    const openBtn = document.getElementById('openNeon');
+    const modal = document.getElementById('neonModal');
+    openBtn.onclick = () => { modal.style.display = 'flex'; }
+    modal.onclick = (e) => { if(e.target==modal) modal.style.display='none'; }
+  </script>
    
  
     <!-- Carousel Control -->
