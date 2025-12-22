@@ -134,6 +134,93 @@ Bike travelers aur solo explorers ke liye Gujarat ke yeh offbeat destinations ek
   <footer style="text-align: center; color: #777; margin-bottom: 20px;">
     © 2025 Rahul Haroliya. All rights reserved.
   </footer>
-  
+  <!-- ================= AUTHOR BOX CSS ================= -->
+  <style>
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 720px;
+      margin: 30px auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .author-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .author-info h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      color: #111;
+    }
+
+    .author-info p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .author-links {
+      margin-top: 6px;
+    }
+
+    .author-links a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .author-img {
+        width: 60px;
+        height: 60px;
+      }
+      .author-info h3 {
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .author-box {
+        background: #1e1e1e;
+      }
+      .author-info h3 {
+        color: #ffffff;
+      }
+      .author-info p {
+        color: #cccccc;
+      }
+      .author-links a {
+        color: #8ab4f8;
+      }
+    }
+  </style>
+
+<!-- ================= AUTHOR BOX ================= -->
+  <section class="author-box">
+    <img src="static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+
+    <div class="author-info">
+      <h3>Rahul Haroliya</h3>
+      <p>
+        Rahul Haroliya is an Indian bike traveler and blogger who documents
+        unexplored destinations and travel experiences across India.
+      </p>
+
+      <p class="author-links">
+        <a href="/about.html">About</a> ·
+        <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </section>
 </body>
 </html>
