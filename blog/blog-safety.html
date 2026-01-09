@@ -3,45 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>भारत में बाइकिंग के लिए जरूरी सुरक्षा उपाय</title>
-  <meta name="description" content="जानिए भारत में बाइकिंग करते समय किन सुरक्षा उपायों का ध्यान रखना चाहिए ताकि आपकी यात्रा सुरक्षित और मजेदार रहे।" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>भारत में बाइकिंग के लिए जरूरी सुरक्षा उपाय</h1>
-    <p>सुरक्षित यात्रा के लिए ये टिप्स जरूर अपनाएं</p>
-  </header>
-  <main>
-    <section>
-      <h2>1. हमेशा हेलमेट पहनें</h2>
-      <p>हेलमेट आपकी जान बचाने वाला सबसे महत्वपूर्ण उपकरण है। भारत में कई जगहों पर हेलमेट पहनना कानूनन भी अनिवार्य है। हमेशा अच्छी क्वालिटी का, सही साइज का और सर्टिफाइड हेलमेट पहनें।</p>
-    </section>
-    <section>
-      <h2>2. सही बाइक गियर का इस्तेमाल करें</h2>
-      <p>बाइकिंग के दौरान जैकेट, ग्लव्स, बूट्स जैसे गियर पहनना जरूरी है, खासकर लंबी यात्राओं में। ये आपके शरीर को चोट से बचाते हैं और खराब मौसम में सुरक्षा देते हैं।</p>
-    </section>
-    <section>
-      <h2>3. ट्रैफिक नियमों का पालन करें</h2>
-      <p>रास्ते पर हमेशा ट्रैफिक नियमों का पालन करें। ओवरस्पीडिंग, गलत लेन में चलना या रेड लाइट पार करना खतरनाक हो सकता है। नियमों का सम्मान करें ताकि सुरक्षित रहें।</p>
-    </section>
-    <section>
-      <h2>4. बाइक की नियमित जांच करें</h2>
-      <p>टायर प्रेशर, ब्रेक, लाइट्स, और इंजन की कंडीशन नियमित चेक करते रहें। खराब बाइक से चलना खतरा बढ़ाता है। सफर से पहले पूरी बाइक का निरीक्षण जरूर करें।</p>
-    </section>
-    <section>
-      <h2>5. सावधानी से ड्राइव करें और ध्यान केंद्रित रखें</h2>
-      <p>सड़क पर ध्यान बनाए रखें, मोबाइल या अन्य डिस्टर्बेंस से बचें। सड़क पर अचानक आने वाले खतरे जैसे पैदल यात्री, पशु, या गाड़ियों से सतर्क रहें।</p>
-    </section>
-    
-    
-  <p style="text-align: center; margin: 40px 0 10px;">
-    <a href="../blog.html" style="text-decoration: none; color: #007BFF;">← ब्लॉग पेज पर वापस जाएँ</a>
-  </p>
 
-  <footer style="text-align: center; color: #777; margin-bottom: 20px;">
-    © 2026 Rahul Haroliya. All rights reserved.
-  </footer>
+  <title>भारत में बाइकिंग के लिए जरूरी सुरक्षा उपाय | Rahul Haroliya</title>
+  <meta name="description" content="जानिए भारत में बाइकिंग करते समय किन सुरक्षा उपायों का ध्यान रखना चाहिए ताकि आपकी यात्रा सुरक्षित और मजेदार रहे।" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ================= AUTHOR BOX + FOOTER CSS ================= -->
+  <style>
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 720px;
+      margin: 30px auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .author-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .author-info h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      color: #111;
+    }
+
+    .author-info p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .author-links {
+      margin-top: 6px;
+    }
+
+    .author-links a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin: 30px 0 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .author-img {
+        width: 60px;
+        height: 60px;
+      }
+      .author-info h3 {
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .author-box {
+        background: #1e1e1e;
+      }
+      .author-info h3 {
+        color: #ffffff;
+      }
+      .author-info p {
+        color: #cccccc;
+      }
+      .author-links a {
+        color: #8ab4f8;
+      }
+      footer {
+        color: #cccccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>भारत में बाइकिंग के लिए जरूरी सुरक्षा उपाय</h1>
+  <p>सुरक्षित यात्रा के लिए ये टिप्स जरूर अपनाएं</p>
+</header>
+
+<main>
+  <section>
+    <h2>1. हमेशा हेलमेट पहनें</h2>
+    <p>
+      हेलमेट आपकी जान बचाने वाला सबसे महत्वपूर्ण उपकरण है।
+      हमेशा अच्छी क्वालिटी का, सही साइज का और सर्टिफाइड हेलमेट पहनें।
+    </p>
+  </section>
+
+  <section>
+    <h2>2. सही बाइक गियर का इस्तेमाल करें</h2>
+    <p>
+      जैकेट, ग्लव्स और बूट्स जैसे गियर आपको चोट और खराब मौसम से बचाते हैं।
+    </p>
+  </section>
+
+  <section>
+    <h2>3. ट्रैफिक नियमों का पालन करें</h2>
+    <p>
+      ओवरस्पीडिंग, गलत लेन और रेड लाइट तोड़ना जानलेवा हो सकता है।
+      नियमों का पालन करना आपकी और दूसरों की सुरक्षा है।
+    </p>
+  </section>
+
+  <section>
+    <h2>4. बाइक की नियमित जांच करें</h2>
+    <p>
+      टायर प्रेशर, ब्रेक, लाइट्स और इंजन की स्थिति
+      सफर से पहले जरूर जांचें।
+    </p>
+  </section>
+
+  <section>
+    <h2>5. सावधानी से ड्राइव करें</h2>
+    <p>
+      मोबाइल से दूर रहें और सड़क पर अचानक आने वाले
+      पैदल यात्री, पशु और वाहनों पर नजर रखें।
+    </p>
+  </section>
+</main>
+
+<p style="text-align: center; margin: 40px 0 10px;">
+  <a href="../blog.html" style="text-decoration: none; color: #007BFF;">
+    ← ब्लॉग पेज पर वापस जाएँ
+  </a>
+</p>
+
+<hr>
+
+<!-- ================= AUTHOR BOX ================= -->
+<section class="author-box">
+  <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+
+  <div class="author-info">
+    <h3>Rahul Haroliya</h3>
+    <p>
+      Rahul Haroliya is an Indian bike traveler and blogger who documents
+      unexplored destinations and travel experiences across India.
+    </p>
+
+    <p class="author-links">
+      <a href="/about.html">About</a> ·
+      <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Rahul Haroliya. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
