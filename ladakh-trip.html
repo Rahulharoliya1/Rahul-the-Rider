@@ -5,31 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>लद्दाख बाइक ट्रिप – एक सपनों की यात्रा | Rahul Haroliya</title>
-
   <meta name="description" content="लद्दाख बाइक ट्रिप – हिम, पहाड़ और अनंत रास्तों की यात्रा। राहुल हरोलिया के अनुभव और सुझाव एक बेहतरीन लद्दाख बाइक यात्रा के लिए।">
   <meta name="keywords" content="लद्दाख बाइक ट्रिप, Ladakh bike trip, Rahul Haroliya, Manali to Leh ride, Indian bike travel">
 
   <link rel="stylesheet" href="/style.css" />
 
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.8;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    article h2 {
+      color: #222;
+      margin-top: 30px;
+      font-size: 22px;
+    }
+
+    article p {
+      margin: 14px 0;
+      font-size: 16px;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* AUTHOR BOX */
     .author-box {
       display: flex;
+      flex-wrap: wrap;
       gap: 15px;
       align-items: center;
       background: #f9f9f9;
       border-radius: 12px;
-      padding: 15px;
+      padding: 20px;
       margin: 50px auto 30px;
-      max-width: 800px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     .author-box img {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
+    }
+
+    .author-info {
+      flex: 1;
+      min-width: 200px;
     }
 
     .author-info h3 {
@@ -51,25 +92,45 @@
 
     .author-links a {
       font-size: 13px;
-      color: #007BFF;
-      text-decoration: none;
+      margin-right: 8px;
     }
 
+    /* BACK TO BLOG LINK */
+    .back-link {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      color: #777;
+      margin: 40px 0 20px;
+      font-size: 14px;
+    }
+
+    /* MOBILE RESPONSIVE */
     @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+
       .author-box {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
       }
-    }
 
-    article h2 {
-      color: #222;
-      margin-top: 30px;
-    }
-
-    article p {
-      line-height: 1.8;
-      margin: 12px 0;
+      .author-box img {
+        width: 70px;
+        height: 70px;
+      }
     }
   </style>
 </head>
@@ -107,23 +168,19 @@
     </article>
   </main>
 
-  <p style="text-align: center; margin: 40px 0 10px;">
-    <a href="../blog.html" style="text-decoration: none; color: #007BFF;">
-      ← ब्लॉग पेज पर वापस जाएँ
-    </a>
-  </p>
+  <div class="back-link">
+    <a href="../blog.html">← ब्लॉग पेज पर वापस जाएँ</a>
+  </div>
 
   <!-- AUTHOR BOX -->
   <section class="author-box">
     <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya on Ladakh bike trip">
-
     <div class="author-info">
       <h3>Rahul Haroliya</h3>
       <p>
         राहुल हरोलिया एक भारतीय बाइक यात्री और ब्लॉगर हैं जो वास्तविक यात्रा अनुभव, 
         कहानियाँ और भारत के अनदेखे स्थान साझा करते हैं।
       </p>
-
       <div class="author-links">
         <a href="/about.html">About</a> ·
         <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
@@ -131,8 +188,7 @@
     </div>
   </section>
 
-  <!-- FOOTER WITH AUTO YEAR -->
-  <footer style="text-align: center; color: #777; margin-bottom: 20px;">
+  <footer>
     © <span id="year"></span> Rahul Haroliya. All rights reserved.
   </footer>
 
