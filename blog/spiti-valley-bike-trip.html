@@ -30,12 +30,37 @@
           <li>Power Bank, Maps, Medicines</li>
         </ul>
         
-  <p style="text-align: center; margin: 40px 0 10px;">
-    <a href="../blog.html" style="text-decoration: none; color: #007BFF;">← ब्लॉग पेज पर वापस जाएँ</a>
-  </p>
+  <!-- Back link -->
+<p style="text-align:center; margin:40px 0 10px;">
+  <a href="../blog.html" style="color:#007BFF; text-decoration:none;">
+    ← ब्लॉग पेज पर वापस जाएँ
+  </a>
+</p>
 
-  <footer style="text-align: center; color: #777; margin-bottom: 20px;">
-    © 2025 Rahul Haroliya. All rights reserved.
-  </footer>
+<!-- Author Box -->
+<section class="author-box">
+  <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+  <div class="author-info">
+    <h3>Rahul Haroliya</h3>
+    <p>
+      Rahul Haroliya is an Indian bike traveler and blogger who documents
+      unexplored destinations and road trip experiences across India.
+    </p>
+    <p class="author-links">
+      <a href="/about.html">About</a> ·
+      <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © <span id="year"></span> Rahul Haroliya. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
