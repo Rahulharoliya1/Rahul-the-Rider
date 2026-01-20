@@ -254,7 +254,7 @@
   <!-- Sliding Text Section -->
   <div class="sliding-text">
   <span>
-    <img src="static/images/hayabusa%20(2).gif" alt="hayabusa" style="height:70px; vertical-align:middle;" loading="lazy">
+    <img src="static/images/hayabusa%20(2).gif" alt="Hayabusa bike animation by Rahul Haroliya" style="height:70px; vertical-align:middle;" loading="lazy">
     &nbsp; RAHUL HAROLIYA – The Joker Rider
   </span>
 </div>
@@ -262,7 +262,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#">Rahul Haroliya</a>
+      <a class="navbar-brand fw-bold text-white" href="/">Rahul Haroliya</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -479,8 +479,15 @@
 </script>
 
   <footer>
-    <p>&copy; 2026 Rahul Haroliya. All rights reserved. | <a href="privacy-policy.html" style="color: #aaa;">Privacy Policy</a></p>
-  </footer>
+  <p>
+    &copy; <span id="year"></span> Rahul Haroliya. All rights reserved. |
+    <a href="privacy-policy.html" style="color: #aaa;">Privacy Policy</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
