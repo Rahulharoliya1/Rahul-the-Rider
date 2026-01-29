@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rahul Haroliya - The Joker Rider</title>
 
+<!-- ===== Structured Data ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://rahulharoliya1.site/#rahulharoliya",
+  "name": "Rahul Haroliya",
+  "alternateName": "The Joker Rider",
+  "url": "https://rahulharoliya1.site/",
+  "image": "https://rahulharoliya1.site/static/images/daman.jpg",
+  "jobTitle": ["Digital Creator","Blogger","Travel Content Creator"],
+  "description": "Rahul Haroliya, popularly known as The Joker Rider, is an Indian digital creator and blogger.",
+  "birthPlace": {"@type":"Place","name":"Ahmedabad, Gujarat, India"},
+  "address": {"@type":"PostalAddress","addressLocality":"Ahmedabad","addressRegion":"Gujarat","addressCountry":"India"},
+  "knowsAbout": ["Travel Blogging","Bike Riding","Photography","Content Creation"],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q137356241",
+    "https://www.instagram.com/rahulharoliya1",
+    "https://www.linkedin.com/in/rahulharoliya",
+    "https://www.facebook.com/rahul.haroliya.18",
+    "https://www.youtube.com/@rahulharoliya",
+    "https://everybodywiki.com/Rahul_Haroliya"
+  ]
+}
+</script>
+
 <link rel="canonical" href="https://rahulharoliya1.site/">
-<meta name="description" content="Rahul Haroliya - The Joker Rider. Follow his thrilling motorcycle journeys, photography, travel blogs, and more.">
-<link rel="icon" href="static/images/daman.jpg" />
+<meta name="description" content="Rahul Haroliya - The Joker Rider. Follow his motorcycle journeys, photography and blogs.">
+<link rel="icon" href="static/images/daman.jpg">
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +46,13 @@
 <!-- Animate -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-<!-- Typed.js -->
+<!-- Typed -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<!-- Google Analytics -->
+<!-- Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4027922044596866" crossorigin="anonymous"></script>
+
+<!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-60BR67PZHX"></script>
 <script>
 window.dataLayer=window.dataLayer||[];
@@ -34,62 +64,30 @@ gtag('config','G-60BR67PZHX');
 <style>
 body{
   font-family:'Rajdhani',sans-serif;
-  margin:0;
   padding-top:56px;
   background:#111;
   color:#eee;
-  transition:all .4s ease;
-  perspective:1000px;
+  transition:.4s;
 }
+body.light-mode{background:#f5f7fb;color:#111}
 
-/* Light Mode */
-body.light-mode{
-  background:#f5f7fb;
-  color:#111;
-}
-
-/* Navbar */
-.navbar{background:#000;}
-.navbar a{color:#fff!important;}
-body.light-mode .navbar{background:#fff;}
+.navbar{background:#000}
+.navbar a{color:#fff!important}
+body.light-mode .navbar{background:#fff}
 body.light-mode .navbar a{color:#111!important}
 
-/* Sliding text */
-.sliding-text{
-  background:#222;
-  color:#fff;
-  overflow:hidden;
-  white-space:nowrap;
-  padding:10px;
-}
-body.light-mode .sliding-text{background:#eaeaea;color:#111;}
-.sliding-text span{
-  display:inline-block;
-  animation:slide 10s linear infinite;
-}
-@keyframes slide{
-  0%{transform:translateX(100%)}
-  100%{transform:translateX(-100%)}
-}
+.sliding-text{background:#222;color:#fff;overflow:hidden;white-space:nowrap;padding:10px}
+body.light-mode .sliding-text{background:#eaeaea;color:#111}
 
-/* Hero */
-.hero-section{
-  text-align:center;
-  padding:40px 20px;
-}
+.hero-section{text-align:center;padding:40px 20px}
 .hero-section h1{color:#00ffff;font-size:48px}
 
-/* Cards */
-.card{
-  background:#111;
-  border-radius:16px;
-}
+.card{background:#111;border-radius:16px}
 body.light-mode .card{
   background:linear-gradient(135deg,#fff,#f1f5f9);
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-/* Gallery */
 .gallery img{
   width:100%;
   height:300px;
@@ -97,44 +95,31 @@ body.light-mode .card{
   border-radius:12px;
   transition:.3s;
 }
-.gallery img:hover{
-  transform:scale(1.07);
-  box-shadow:0 10px 25px rgba(0,0,0,.5);
-}
+.gallery img:hover{transform:scale(1.07)}
 body.light-mode .gallery img:hover{
-  box-shadow:0 0 30px rgba(34,211,238,.6);
+  box-shadow:0 0 30px rgba(34,211,238,.6)
 }
 
-/* Footer */
-footer{
-  background:#000;
-  color:#aaa;
-  text-align:center;
-  padding:2rem 0;
-}
-body.light-mode footer{
-  background:#eaeaea;
-  color:#111;
-}
+footer{background:#000;color:#aaa;text-align:center;padding:2rem}
+body.light-mode footer{background:#eaeaea;color:#111}
 </style>
 </head>
 
 <body>
 
-<!-- 🌗 MODE TOGGLE -->
+<!-- 🌗 Toggle -->
 <button id="mode-toggle"
 style="position:fixed;top:15px;right:15px;z-index:9999;
 width:48px;height:48px;border-radius:50%;
 border:none;background:#fff;font-size:20px;
-box-shadow:0 0 15px rgba(34,211,238,.8);
-cursor:pointer;transition:.3s">
+box-shadow:0 0 15px rgba(34,211,238,.8);cursor:pointer">
 🌗
 </button>
 
-<!-- Sliding Text -->
+<!-- Sliding -->
 <div class="sliding-text">
 <span>
-<img src="static/images/hayabusa%20(2).gif" style="height:60px;vertical-align:middle">
+<img src="static/images/hayabusa%20(2).gif" style="height:70px;vertical-align:middle">
 &nbsp; RAHUL HAROLIYA – The Joker Rider
 </span>
 </div>
@@ -192,7 +177,6 @@ typeSpeed:50,backSpeed:25,loop:true
 <p>&copy; <span id="year"></span> Rahul Haroliya</p>
 </footer>
 
-<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 
@@ -206,7 +190,8 @@ document.body.classList.add("light-mode");
 }
 toggle.onclick=()=>{
 document.body.classList.toggle("light-mode");
-localStorage.setItem("theme",document.body.classList.contains("light-mode")?"light":"dark");
+localStorage.setItem("theme",
+document.body.classList.contains("light-mode")?"light":"dark");
 };
 </script>
 
