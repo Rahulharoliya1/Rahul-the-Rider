@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rahul Haroliya - The Joker Rider</title>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahul Haroliya",
+    "alternateName": "The Joker Rider",
+    "url": "https://rahulharoliya1.site/",
+    "image": "https://rahulharoliya1.site/static/images/daman.jpg"
+  }
+  </script>
+
   <link rel="canonical" href="https://rahulharoliya1.site/">
   <link rel="icon" href="static/images/daman.jpg" />
 
@@ -22,10 +34,8 @@
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <!-- Medium Zoom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
-
   <style>
+    /* === Color Variables for Dark/Light Mode === */
     :root {
       --bg-main: #0b1220;
       --bg-section: #111827;
@@ -38,7 +48,7 @@
 
       --light-bg-main: #f0f0f0;
       --light-bg-section: #ffffff;
-      --light-bg-card: linear-gradient(145deg, #e0e0e0, #ffffff);
+      --light-bg-card: #e0e0e0;
       --light-text-main: #111827;
       --light-text-muted: #555555;
       --light-heading: #111827;
@@ -59,6 +69,7 @@
       color: var(--light-text-main);
     }
 
+    /* Navbar */
     .navbar {
       background: rgba(15, 23, 42, 0.85);
       backdrop-filter: blur(10px);
@@ -90,6 +101,7 @@
       text-shadow: 0 0 8px var(--light-accent);
     }
 
+    /* Dark/Light Toggle Button */
     #modeToggle {
       cursor: pointer;
       font-size: 1.2rem;
@@ -116,6 +128,7 @@
       color: var(--light-bg-main);
     }
 
+    /* Sliding Text */
     .sliding-text {
       width: 100%;
       overflow: hidden;
@@ -152,6 +165,7 @@
       100% { transform: translateX(-100%); }
     }
 
+    /* Hero Section */
     .hero-section h1 {
       color: var(--accent);
       text-shadow: 0 0 20px var(--accent);
@@ -172,6 +186,7 @@
       color: var(--light-text-main);
     }
 
+    /* Gallery hover glow */
     .gallery img {
       width: 100%;
       height: 300px;
@@ -191,16 +206,7 @@
       box-shadow: 0 10px 20px var(--light-accent-soft);
     }
 
-    .card {
-      background-color: var(--bg-card);
-      transition: all 0.5s ease;
-    }
-
-    body.light-mode .card {
-      background: var(--light-bg-card);
-      color: var(--light-text-main);
-    }
-
+    /* Footer */
     footer {
       background-color: var(--bg-main);
       color: var(--text-muted);
@@ -256,7 +262,9 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.openpr.com/news/4284429/rahul-haroliya-digital-creator-bike-rider-and-emerging" target="_blank">News</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
           <li class="nav-item ms-3">
             <button id="modeToggle" title="Toggle Dark/Light Mode">🌗</button>
           </li>
@@ -270,23 +278,13 @@
     <div class="container">
       <h1 class="animate__animated animate__fadeInDown">Rahul Haroliya</h1>
       <p id="typed-text"></p>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Gallery</h2>
-      <div class="row g-3 gallery">
-        <div class="col-md-4"><a href="static/images/bike rider.jpg"><img src="static/images/bike rider.jpg" alt="Ride 1" loading="lazy" /></a></div>
-        <div class="col-md-4"><a href="static/images/daman.jpg"><img src="static/images/daman.jpg" alt="Ride 2" loading="lazy" /></a></div>
-        <div class="col-md-4"><a href="static/images/bike.jpg"><img src="static/images/bike.jpg" alt="Ride 3" loading="lazy" /></a></div>
+      <div class="mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <a href="blog1.html" class="btn btn-outline-info btn-lg m-2">📖 ब्लॉग पढ़ें</a>
+        <a href="#gallery" class="btn btn-outline-light btn-lg m-2">🖼️ गैलरी देखें</a>
+        <a href="#contact" class="btn btn-info btn-lg m-2 text-white">📬 संपर्क करें</a>
       </div>
     </div>
   </section>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Typed.js Activation -->
   <script>
@@ -299,26 +297,21 @@
     });
   </script>
 
-  <!-- Medium Zoom -->
-  <script>
-    mediumZoom('.gallery a img', {
-      margin: 24,
-      background: 'rgba(0,0,0,0.8)',
-      scrollOffset: 0
-    });
-  </script>
-
-  <!-- Dark/Light Toggle -->
+  <!-- Dark/Light Mode Toggle Script -->
   <script>
     const modeToggle = document.getElementById("modeToggle");
     modeToggle.addEventListener("click", () => {
       document.body.classList.toggle("light-mode");
       localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
     });
+
+    // Load saved theme
     if (localStorage.getItem('theme') === 'light') {
       document.body.classList.add("light-mode");
     }
   </script>
-</body>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
