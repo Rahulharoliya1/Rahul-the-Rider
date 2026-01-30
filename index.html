@@ -94,14 +94,9 @@
 
     <style>
     body {
-      padding-top: 56px; /* Fix navbar overlap */
-      margin: 0;
-      background-color: #000; /* Just for contrast */
-    }
-     .hero-section {
-  padding-top: 10px;
-  padding-bottom: 0px;
-} 
+  padding-top: 56px;
+  margin: 0;
+}
 .sliding-text {
   width: 100%;
   overflow: hidden;
@@ -283,7 +278,26 @@
     0 0 25px rgba(57, 255, 20, 0.8),
     0 0 50px rgba(57, 255, 20, 0.4);
 }
+    .hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at top, #0b0b0b, #000);
+}
 
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #39ff14;
+  text-shadow: 0 0 20px rgba(57,255,20,0.8);
+}
+
+.hero-tagline {
+  font-size: 18px;
+  color: #cccccc;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
   </style>
 </head>
   
@@ -329,18 +343,24 @@
       </div>
   </nav>
 
-    <!-- Hero Section with Typing Effect -->
-<section id="hero" class="hero-section">
+    <section id="hero" class="hero-section">
   <div class="container text-center">
-    <h1 class="animate__animated animate__fadeInDown" style="font-size: 48px; font-weight: bold; color: #00ffff;">
+    
+    <h1 class="hero-title animate__animated animate__fadeInDown">
       Rahul Haroliya
     </h1>
+
     <p id="typed-text"></p>
-    <div class="mt-4 text-center animate__animated animate__fadeInUp animate__delay-1s">
-      <a href="blog1.html" class="btn btn-outline-info btn-lg m-2">📖 ब्लॉग पढ़ें</a>
-      <a href="#gallery" class="btn btn-outline-light btn-lg m-2">🖼️ गैलरी देखें</a>
-      <a href="#contact" class="btn btn-info btn-lg m-2 text-white">📬 संपर्क करें</a>
+
+    <p class="hero-tagline">
+      Riding beyond roads • Capturing real journeys • Living the ride
+    </p>
+
+    <div class="hero-buttons mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+      <a href="#gallery" class="btn btn-outline-success btn-lg m-2">🏍️ View Rides</a>
+      <a href="blog.html" class="btn btn-outline-light btn-lg m-2">📖 Read Stories</a>
     </div>
+
   </div>
 </section>
 
