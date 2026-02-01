@@ -8,11 +8,11 @@ body {
   padding-top: 0 !important;
 
   /* 🏍️ Custom Bike Cursor */
-  cursor: url("/static/images/bike-cursor.png") 16 16, auto;
+  cursor: url("/static/images/bike-cursor.png") 24 24, auto;
 }
 
-a, button {
-  cursor: url("/static/images/bike-cursor.png") 16 16, pointer;
+a, button, .btn {
+  cursor: url("/static/images/bike-cursor.png") 24 24, pointer;
 }
 
 /* ===== Navbar ===== */
