@@ -2,22 +2,77 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ahmedabad ke 10 Hidden Places jo Zyada Log Nahi Jaante | Rahul Haroliya</title>
   <meta name="description" content="Ahmedabad ke 10 hidden places jo zyada log nahi jaante. Offbeat heritage spots, shaant jagah aur local travel tips.">
 
-  <!-- ================= AUTHOR BOX + FOOTER CSS ================= -->
+  <!-- ================= NEON BIKER BLOG STYLE ================= -->
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #e5e5e5;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      color: #39ff14;
+      text-align: center;
+      text-shadow: 0 0 15px rgba(57,255,20,0.8);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #39ff14;
+      margin-top: 40px;
+      text-shadow: 0 0 8px rgba(57,255,20,0.6);
+    }
+
+    p, li {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: rgba(57,255,20,0.25);
+      margin: 40px 0;
+    }
+
+    a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== AUTHOR BOX ===== */
     .author-box {
       display: flex;
       align-items: center;
       gap: 15px;
-      background: #ffffff;
-      padding: 15px;
-      border-radius: 12px;
+      background: #000;
+      padding: 18px;
+      border-radius: 14px;
       max-width: 720px;
-      margin: 30px auto;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      margin: 50px auto 30px;
+      border: 1px solid rgba(57,255,20,0.3);
+      box-shadow: 0 0 20px rgba(57,255,20,0.25);
     }
 
     .author-img {
@@ -25,70 +80,41 @@
       height: 70px;
       border-radius: 50%;
       object-fit: cover;
-      flex-shrink: 0;
+      border: 2px solid #39ff14;
     }
 
     .author-info h3 {
       margin: 0 0 6px;
-      font-size: 18px;
-      color: #111;
+      color: #39ff14;
     }
 
     .author-info p {
       margin: 0;
       font-size: 14px;
-      line-height: 1.5;
-      color: #555;
-    }
-
-    .author-links {
-      margin-top: 6px;
+      color: #ccc;
     }
 
     .author-links a {
-      color: #1a73e8;
-      text-decoration: none;
       font-size: 13px;
     }
 
     footer {
       text-align: center;
-      padding: 20px 10px;
       font-size: 14px;
-      color: #666;
+      color: #aaa;
+      margin: 40px 0 20px;
     }
 
     @media (max-width: 600px) {
-      .author-img {
-        width: 60px;
-        height: 60px;
-      }
-      .author-info h3 {
-        font-size: 16px;
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .author-box {
-        background: #1e1e1e;
-      }
-      .author-info h3 {
-        color: #ffffff;
-      }
-      .author-info p {
-        color: #cccccc;
-      }
-      .author-links a {
-        color: #8ab4f8;
-      }
-      footer {
-        color: #cccccc;
-      }
+      h1 { font-size: 26px; }
+      h2 { font-size: 20px; }
     }
   </style>
 </head>
 
 <body>
+
+<main>
 
 <h1>Ahmedabad ke Hidden 10 Places jo Aapko Zaroor Explore Karni Chahiye</h1>
 
@@ -200,14 +226,12 @@ Instagram:
 <!-- ================= AUTHOR BOX ================= -->
 <section class="author-box">
   <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
-
   <div class="author-info">
     <h3>Rahul Haroliya</h3>
     <p>
       Rahul Haroliya is an Indian bike traveler and blogger who documents
       unexplored destinations across India.
     </p>
-
     <p class="author-links">
       <a href="/about.html">About</a> ·
       <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
@@ -218,6 +242,8 @@ Instagram:
 <footer>
   © <span id="year"></span> Rahul Haroliya. All rights reserved.
 </footer>
+
+</main>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
