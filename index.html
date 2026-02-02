@@ -46,7 +46,7 @@
 
 "https://www.imdb.com/name/nm17915558/",
 
-"https://youthkiawaaz.com/author/rahulharoliya/" 
+"https://youthkiawaaz.com/author/rahulharoliya/", 
     "https://www.instagram.com/rahulharoliya1",
     "https://www.linkedin.com/in/rahulharoliya",
     "https://www.facebook.com/rahul.haroliya.18",
@@ -97,23 +97,32 @@
 </script>
 
     <style>
-    body {
-  padding-top: 56px;
+/* ===== BODY (merged safely) ===== */
+body {
   margin: 0;
+  padding-top: 96px; /* navbar (56) + sliding text space */
+  font-family: 'Rajdhani', sans-serif;
+  color: #eee;
+  background-color: #111;
+  transition: background-color 2s ease-in-out;
+  perspective: 1000px;
 }
+
+/* ===== SLIDING TEXT ===== */
 .sliding-text {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #222; /* Black background */
+  background: #000;
   color: white;
   padding: 10px 0;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  position: relative;
-  z-index: 10;
-   margin-top: 1px;
+  position: fixed;
+  top: 56px; /* navbar ke just niche */
+  left: 0;
+  z-index: 1050;
 }
 
 .sliding-text span {
@@ -121,168 +130,32 @@
   padding-right: 100%;
   animation: slide 10s linear infinite;
   font-size: 24px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  padding: 10px 0;
 }
 
 @keyframes slide {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-</style>  
-  
-  <script>
-    if (location.protocol !== 'https:') {
-      location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
-  </script>
 
-  <style>
-    /* 3D perspective for the whole page */
-    body {
-      font-family: 'Rajdhani', sans-serif;
-      color: #eee;
-      transition: background-color 2s ease-in-out;
-      perspective: 1000px;
-      background-color: #111;
-    }
-
-    .navbar {
-      background-color: #000;
-    }
-
-    .navbar a {
-      color: #fff !important;
-      display: inline-block;
-      transition: transform 0.3s ease;
-      transform-style: preserve-3d;
-    }
-
-    .navbar a:hover {
-      transform: rotateX(10deg) translateZ(10px);
-      color: #0dcaf0 !important;
-    }
-
-    .carousel-item img {
-      width: 100%;
-      height: 80vh;
-      object-fit: cover;
-      transition: transform 0.5s ease-in-out;
-      transform-style: preserve-3d;
-      cursor: pointer;
-    }
-
-    .carousel-item img:hover {
-      transform: rotateY(15deg) translateZ(40px) scale(1.05);
-    }
-
-    .carousel-caption {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      border-radius: 12px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.3s ease-in-out;
-      cursor: pointer;
-      transform-style: preserve-3d;
-      box-shadow: none;
-    }
-
-    .gallery img:hover {
-      transform: rotateY(-10deg) translateZ(30px) scale(1.07);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    }
-
-    footer {
-      background-color: #000;
-      padding: 2rem 0;
-      text-align: center;
-      color: #aaa;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    #imageModal .modal-content {
-      background: transparent;
-      border: none;
-      box-shadow: none;
-    }
-
-    #imageModal img {
-      border-radius: 8px;
-      max-height: 90vh;
-      width: 100%;
-      object-fit: contain;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .social-links {
-      display: flex;
-      gap: 15px;
-      margin: 20px 0;
-    }
-    .social-links a img {
-      width: 32px;
-      height: 32px;
-      transition: transform 0.3s ease;
-    }
-    .social-links a img:hover {
-      transform: scale(1.2);
-    }
-    #typed-text{
-  text-align: center;
-  font-size: 20px;
-  margin-top: 8px;
-}
-    /* ===== NEON BIKER GALLERY ===== */
-.gallery-section {
-  background: radial-gradient(circle at top, #0b0b0b, #000);
-  padding: 80px 0;
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #000;
 }
 
-.gallery-title {
-  text-align: center;
-  font-size: 2.6rem;
-  color: #39ff14;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-  text-shadow: 0 0 15px rgba(57, 255, 20, 0.8);
+.navbar a {
+  color: #fff !important;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
 }
 
-.neon-gallery img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 2px solid rgba(57, 255, 20, 0.3);
-  box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
-  transition: all 0.4s ease;
-  cursor: pointer;
+.navbar a:hover {
+  transform: rotateX(10deg) translateZ(10px);
+  color: #39ff14 !important;
 }
 
-.neon-gallery img:hover {
-  transform: scale(1.08) translateY(-8px);
-  box-shadow: 
-    0 0 25px rgba(57, 255, 20, 0.8),
-    0 0 50px rgba(57, 255, 20, 0.4);
-}
-    .hero-section {
+/* ===== HERO ===== */
+.hero-section {
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -302,10 +175,71 @@
   margin-top: 10px;
   letter-spacing: 1px;
 }
-  </style>
-</head>
-  
-  <body>
+
+#typed-text {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+  color: #39ff14;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel-item img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* ===== GALLERY ===== */
+.gallery-section {
+  background: radial-gradient(circle at top, #0b0b0b, #000);
+  padding: 80px 0;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #39ff14;
+  margin-bottom: 50px;
+  text-shadow: 0 0 15px rgba(57, 255, 20, 0.8);
+}
+
+.neon-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(57, 255, 20, 0.3);
+  transition: 0.4s;
+}
+
+.neon-gallery img:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 25px rgba(57, 255, 20, 0.8),
+    0 0 50px rgba(57, 255, 20, 0.4);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #000;
+  padding: 2rem 0;
+  text-align: center;
+  color: #aaa;
+}
+</style>
     
   <!-- Sliding Text Section -->
   <div class="sliding-text">
@@ -316,7 +250,7 @@
 </div>
     
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="navbar-brand fw-bold text-white" href="/">Rahul Haroliya</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -393,7 +327,7 @@
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="static/images/daman.jpg" class="d-block w-100" alt="Daman" loading="lazy" />
+      <img src="static/images/daman.jpg" class="d-block w-100" alt="Daman" />
       <div class="carousel-caption d-none d-md-block">
         <h2 class="text-light">Rahul Haroliya - The Joker Rider</h2>
         <p>Exploring the roads less traveled. Join the journey!</p>
