@@ -1,200 +1,264 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>लद्दाख बाइक ट्रिप – एक सपनों की यात्रा | Rahul Haroliya</title>
-  <meta name="description" content="लद्दाख बाइक ट्रिप – हिम, पहाड़ और अनंत रास्तों की यात्रा। राहुल हरोलिया के अनुभव और सुझाव एक बेहतरीन लद्दाख बाइक यात्रा के लिए।">
-  <meta name="keywords" content="लद्दाख बाइक ट्रिप, Ladakh bike trip, Rahul Haroliya, Manali to Leh ride, Indian bike travel">
+<title>लद्दाख बाइक ट्रिप – एक सपनों की यात्रा | Rahul Haroliya</title>
+<meta name="description" content="लद्दाख बाइक ट्रिप – हिमालय, ऊँचे पहाड़ और अनंत रास्तों की रोमांचक यात्रा। राहुल हरोलिया के अनुभव, tips, budget और सुरक्षा सुझाव।">
+<meta name="keywords" content="लद्दाख बाइक ट्रिप, Ladakh bike trip, Manali to Leh ride, Rahul Haroliya, Indian bike travel">
 
-  <link rel="stylesheet" href="/style.css" />
+<style>
+/* BASE STYLE */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: #e5e5e5;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.8;
-      background-color: #fff;
-      color: #111;
-    }
+h1, h2 {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57,255,20,0.8);
+}
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 25px;
-      text-align: center;
-    }
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
 
-    article h2 {
-      color: #222;
-      margin-top: 30px;
-      font-size: 22px;
-    }
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  text-shadow: 0 0 8px rgba(57,255,20,0.6);
+}
 
-    article p {
-      margin: 14px 0;
-      font-size: 16px;
-    }
+p, li {
+  font-size: 16px;
+  color: #ccc;
+  margin: 6px 0;
+  text-align: justify;
+}
 
-    a {
-      color: #007BFF;
-      text-decoration: none;
-    }
+ul {
+  padding-left: 20px;
+  margin: 6px 0;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: #39ff14;
+  text-decoration: none;
+}
 
-    /* AUTHOR BOX */
-    .author-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      align-items: center;
-      background: #f9f9f9;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 50px auto 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    .author-box img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
+/* Intro Box */
+.intro-box {
+  background: #000;
+  border: 1px solid rgba(57,255,20,.3);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px rgba(57,255,20,.25);
+}
 
-    .author-info {
-      flex: 1;
-      min-width: 200px;
-    }
+/* Author Box */
+.author-box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: #000;
+  padding: 18px;
+  border-radius: 14px;
+  margin: 50px auto 30px;
+  border: 1px solid rgba(57,255,20,.3);
+  box-shadow: 0 0 20px rgba(57,255,20,.25);
+}
 
-    .author-info h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-      color: #111;
-    }
+.author-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #39ff14;
+}
 
-    .author-info p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.5;
-      color: #555;
-    }
+.author-info h3 {
+  margin: 0 0 6px;
+  color: #39ff14;
+}
 
-    .author-links {
-      margin-top: 6px;
-    }
+.author-info p {
+  margin: 0;
+  color: #ccc;
+  font-size: 14px;
+}
 
-    .author-links a {
-      font-size: 13px;
-      margin-right: 8px;
-    }
+.author-links a {
+  font-size: 13px;
+  margin-right: 8px;
+}
 
-    /* BACK TO BLOG LINK */
-    .back-link {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
+/* Back Link */
+.back-link {
+  text-align: center;
+  margin: 30px 0 15px;
+}
 
-    .back-link a {
-      text-decoration: none;
-      color: #007BFF;
-      font-size: 16px;
-    }
+.back-link a {
+  color: #39ff14;
+  font-size: 16px;
+  text-decoration: none;
+}
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      color: #777;
-      margin: 40px 0 20px;
-      font-size: 14px;
-    }
+.back-link a:hover {
+  text-decoration: underline;
+}
 
-    /* MOBILE RESPONSIVE */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 22px;
-      }
+/* Footer */
+footer {
+  text-align: center;
+  color: #aaa;
+  margin: 35px 0 15px;
+  font-size: 14px;
+}
 
-      .author-box {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-      }
-
-      .author-box img {
-        width: 70px;
-        height: 70px;
-      }
-    }
-  </style>
+/* Media Queries */
+@media(max-width:600px){
+  h1{font-size:26px}
+  h2{font-size:20px}
+  .author-box{flex-direction:column;text-align:center}
+  .author-box img{width:70px;height:70px}
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>लद्दाख बाइक ट्रिप – एक सपनों की यात्रा</h1>
-  </header>
+<header>
+<h1>लद्दाख बाइक ट्रिप – एक सपनों की यात्रा</h1>
+</header>
 
-  <main>
-    <article>
-      <p>
-        हिम, पहाड़ और अनंत रास्ते — मेरा सपना, लद्दाख की बाइक यात्रा, आखिरकार सच हुआ। 
-        यह यात्रा रोमांच, अद्भुत दृश्यों और चुनौतियों से भरी थी जिसने मेरी सीमाओं को परखा।
-      </p>
+<main>
 
-      <h2>यात्रा की शुरुआत</h2>
-      <p>
-        मैं मनाली से रवाना हुआ और रोहतांग पास के खूबसूरत दृश्यों से होकर गुजरा। 
-        रास्ते में नदियों को पार किया और अंत में भव्य लेह पहुँचा। हर मोड़ पर नई रोमांचक कहानी सामने आई।
-      </p>
+<section class="intro-box">
+<p>
+लद्दाख — ऊँचे हिमालय, बर्फ़ीले पहाड़ और अनंत सड़कें। हर बाइकर्स का सपना। यह यात्रा केवल मंज़िल तक पहुँचने का नहीं, बल्कि हर मोड़, हर घाटी, और हर चुनौती को महसूस करने की है। मैंने मनाली से रवाना होकर इस ट्रिप का अनुभव किया और यहाँ मैं आपको अपनी पूरी कहानी और tips साझा कर रहा हूँ।
+</p>
+</section>
 
-      <h2>टिप्स और तैयारी</h2>
-      <p>
-        यदि आप लद्दाख बाइक ट्रिप की योजना बना रहे हैं, तो अच्छी तैयारी करें, हाइड्रेटेड रहें, और हर पल का आनंद लें। 
-        यह केवल एक यात्रा नहीं, बल्कि हर राइडर के लिए एक भावनात्मक अनुभव है।
-      </p>
+<article>
 
-      <h2>अधिक जानकारी</h2>
-      <p>
-        आप मेरी <a href="/blog.html">अन्य यात्रा कहानियों</a> और <a href="/about.html">मेरे बारे में</a> जान सकते हैं। 
-        इंस्टाग्राम पर मेरी <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">यात्रा तस्वीरें</a> भी देख सकते हैं।
-      </p>
-    </article>
-  </main>
+<h2>यात्रा की शुरुआत: मनाली से रवाना</h2>
+<p>
+मनाली से लद्दाख की दूरी लगभग 475 किलोमीटर है। शुरुआती दिन में रोहतांग पास और सोलांग वैली के रास्तों का अनुभव आपको ट्रिप के रोमांच की झलक देता है। सड़कें घुमावदार हैं, कभी बर्फ़ कभी पत्थर, हर मोड़ पर सावधानी जरूरी है। पेट्रोल और ब्रेक का ध्यान रखें, और धीरे-धीरे acclimatization करते हुए आगे बढ़ें।
+</p>
 
-  <div class="back-link">
-    <a href="../blog.html">← ब्लॉग पेज पर वापस जाएँ</a>
-  </div>
+<h2>महत्वपूर्ण स्थान और रूट</h2>
+<ul>
+<li>रोहतांग पास – बर्फ़ और घाटियाँ</li>
+<li>सोलांग वैली – adventure sports और sceneries</li>
+<li>कुल्लू और मनाली आसपास के charming गाँव</li>
+<li>लेह – ट्रिप का अंतिम destination, शांति और culture</li>
+<li>पांगोंग झील – blue waters, photographers का heaven</li>
+<li>नुब्रा वैली – camel safari और desert views</li>
+</ul>
+<p>
+इस रूट में रास्ते कठिन लेकिन सुंदर हैं। रात को सड़क पर सावधानी और proper gear के बिना ride न करें।
+</p>
 
-  <!-- AUTHOR BOX -->
-  <section class="author-box">
-    <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya on Ladakh bike trip">
-    <div class="author-info">
-      <h3>Rahul Haroliya</h3>
-      <p>
-        राहुल हरोलिया एक भारतीय बाइक यात्री और ब्लॉगर हैं जो वास्तविक यात्रा अनुभव, 
-        कहानियाँ और भारत के अनदेखे स्थान साझा करते हैं।
-      </p>
-      <div class="author-links">
-        <a href="/about.html">About</a> ·
-        <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </section>
+<h2>बाइक और तैयारी</h2>
+<p>
+बाइक की स्थिति तय करती है आपकी सुरक्षा। Himalayan, Royal Enfield या XPulse जैसी bikes बेहतर हैं। यात्रा से पहले: engine oil, brake pads, clutch cable, tyres और chain lubrication check करें। Spares साथ रखें। Proper riding gear – helmet, gloves, jacket, rain liner – पहाड़ों में life-saving होते हैं।
+</p>
 
-  <footer>
-    © <span id="year"></span> Rahul Haroliya. All rights reserved.
-  </footer>
+<h2>मौसम और सही समय</h2>
+<p>
+Best season अप्रैल-जून और सितंबर-नवंबर है। जुलाई-अगस्त में heavy rains और landslide का खतरा। दिसंबर-मार्च snowfalls के लिए beginners risky हो सकते हैं। मौसम कभी भी बदल सकता है, इसलिए extra warm clothes और rain gear साथ रखें।
+</p>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<h2>सड़क और चुनौती</h2>
+<p>
+ऊँचे passes जैसे Baralacha La, Lachulung La और Tanglang La adventure और endurance की परीक्षा लेते हैं। Altitude sickness से बचने के लिए धीरे-धीरे ride करें, water intake बढ़ाएँ और शरीर को adjust करने दें। हेल्थ kit साथ रखें।
+</p>
+
+<h2>ठहरने और खाने के options</h2>
+<p>
+लेह और नुब्रा वैली में budget hostels, guesthouses और luxury hotels उपलब्ध हैं। Old Manali, Leh market, और Pangong के आसपास cozy stays अच्छे हैं। Local cuisine – momos, thukpa, butter tea – जरूर try करें।
+</p>
+
+<h2>यात्रा का अनुभव</h2>
+<p>
+सड़कों के दोनों ओर पहाड़, नीला आकाश, और serene lakes – हर जगह photo-worthy moment। Rides challenging हैं, लेकिन views आपका मन मोह लेंगी। Locals का culture, monastery visits, और desert landscapes – ये अनुभव यात्रा को unforgettable बनाते हैं।
+</p>
+
+<h2>Safety tips</h2>
+<ul>
+<li>Helmet और riding jacket हमेशा पहनें</li>
+<li>Over-speeding avoid करें</li>
+<li>Night riding से बचें</li>
+<li>Downhill braking carefully करें</li>
+<li>Altitude sickness symptoms पहचानें</li>
+<li>Local advice ignore न करें</li>
+<li>Hydrated रहें और small snacks साथ रखें</li>
+</ul>
+
+<h2>Budget (approx)</h2>
+<ul>
+<li>Fuel: ₹6,000 – ₹8,000</li>
+<li>Stay: ₹800 – ₹2000 per night</li>
+<li>Food: ₹400 – ₹600 per day</li>
+<li>Miscellaneous: ₹2,000</li>
+<li>Total: ₹15,000 – ₹25,000 (depends on comfort & duration)</li>
+</ul>
+
+<h2>Photography और Instagram-worthy spots</h2>
+<ul>
+<li>Pangong Lake – sunrise/sunset</li>
+<li>Nubra Valley – camel rides and sand dunes</li>
+<li>Magnetic Hill – unique photo opportunity</li>
+<li>Thiksey Monastery – cultural shots</li>
+<li>Rohtang Pass – snow and mountain backdrop</li>
+</ul>
+
+<h2>निष्कर्ष</h2>
+<p>
+लद्दाख बाइक ट्रिप केवल एक सड़क यात्रा नहीं, यह आत्म-खोज, adventure और प्रकृति के साथ जुड़ाव है। हर rider को इसे अपने जीवन में अनुभव करना चाहिए। Proper planning, safety, और right gear के साथ, यह trip आपकी life की most unforgettable journeys में से एक बन सकती है।
+</p>
+
+</article>
+
+<div class="back-link">
+<a href="../blog.html">← ब्लॉग पेज पर वापस जाएँ</a>
+</div>
+
+<section class="author-box">
+<img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya on Ladakh bike trip">
+<div class="author-info">
+<h3>Rahul Haroliya</h3>
+<p>राहुल हरोलिया एक भारतीय बाइक यात्री और ब्लॉगर हैं जो वास्तविक यात्रा अनुभव, कहानियाँ और भारत के अनदेखे स्थान साझा करते हैं।</p>
+<div class="author-links">
+<a href="/about.html">About</a> ·
+<a href="https://www.instagram.com/rahulharoliya1/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+</section>
+
+<footer>
+© <span id="year"></span> Rahul Haroliya. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
