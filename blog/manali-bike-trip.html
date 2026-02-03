@@ -12,36 +12,39 @@
     crossorigin="anonymous"></script>
 
   <style>
+    *{box-sizing:border-box}
+
     body{
       margin:0;
       font-family:Arial,sans-serif;
       background:#0b0b0b;
       color:#e5e5e5;
-      line-height:1.8;
+      line-height:1.7;
     }
 
     main{
       max-width:900px;
       margin:auto;
-      padding:30px 20px;
+      padding:18px 20px 30px; /* ⬅ top padding reduced */
     }
 
     h1{
       color:#39ff14;
       text-align:center;
       text-shadow:0 0 15px rgba(57,255,20,.8);
-      margin-bottom:25px;
+      margin:0 0 12px; /* ⬅ gap fix */
     }
 
     h2{
       color:#39ff14;
-      margin-top:45px;
+      margin:35px 0 10px;
       text-shadow:0 0 8px rgba(57,255,20,.6);
     }
 
     p,li{
       color:#ccc;
       font-size:16px;
+      margin:8px 0;
     }
 
     ul{padding-left:20px}
@@ -50,7 +53,7 @@
       border:none;
       height:1px;
       background:rgba(57,255,20,.25);
-      margin:40px 0;
+      margin:22px 0; /* ⬅ reduced */
     }
 
     a{
@@ -63,10 +66,17 @@
     .intro-box{
       background:#000;
       border:1px solid rgba(57,255,20,.3);
-      box-shadow:0 0 25px rgba(57,255,20,.25);
-      border-radius:16px;
-      padding:25px;
-      margin-bottom:40px;
+      box-shadow:0 0 20px rgba(57,255,20,.25);
+      border-radius:14px;
+      padding:20px;
+      margin-bottom:18px; /* ⬅ major fix */
+    }
+
+    /* ADS – EMPTY GAP FIX */
+    ins.adsbygoogle{
+      display:block;
+      margin:16px 0 !important;
+      min-height:0 !important;
     }
 
     /* AUTHOR BOX */
@@ -78,7 +88,7 @@
       padding:18px;
       border-radius:14px;
       max-width:720px;
-      margin:50px auto 30px;
+      margin:40px auto 25px;
       border:1px solid rgba(57,255,20,.3);
       box-shadow:0 0 20px rgba(57,255,20,.25);
     }
@@ -100,10 +110,8 @@
       text-align:center;
       font-size:14px;
       color:#aaa;
-      margin:40px 0 20px;
+      margin:30px 0 10px;
     }
-
-    ins.adsbygoogle{display:block;margin:35px 0}
 
     @media(max-width:600px){
       h1{font-size:26px}
@@ -123,10 +131,12 @@
     मनाली, हिमाचल प्रदेश का खूबसूरत पहाड़ी शहर,
     भारत के सबसे लोकप्रिय बाइकिंग डेस्टिनेशन्स में से एक है।
     अगर आप plains से पहाड़ों तक का
-    **real riding experience** चाहते हैं,
+    <strong>real riding experience</strong> चाहते हैं,
     तो मनाली बाइक ट्रिप एक perfect choice है।
   </p>
 </section>
+
+<hr>
 
 <!-- ADS -->
 <ins class="adsbygoogle"
@@ -151,10 +161,6 @@
 <ul>
   <li>दिल्ली → चंडीगढ़ → बिलासपुर → मंडी → कुल्लू → मनाली</li>
 </ul>
-<p>
-मंडी के बाद असली mountain riding शुरू होती है।
-कुल्लू से मनाली का stretch सबसे ज़्यादा scenic माना जाता है।
-</p>
 
 <hr>
 
@@ -168,53 +174,17 @@
 
 <hr>
 
-<h2>4. बाइक की तैयारी</h2>
-<ul>
-  <li>Complete servicing mandatory</li>
-  <li>Good tyres & brakes</li>
-  <li>Helmet, riding jacket, gloves compulsory</li>
-</ul>
-
-<hr>
-
-<h2>5. खर्चा अनुमान</h2>
-<ul>
-  <li>ईंधन: ₹3000–₹4000</li>
-  <li>खाना: ₹300–₹600 / दिन</li>
-  <li>रहना: ₹800–₹1500 / रात</li>
-</ul>
-
-<hr>
-
-<h2>6. ज़रूरी टिप्स</h2>
-<ul>
-  <li>सुबह जल्दी निकलें</li>
-  <li>Hydration और breaks लेते रहें</li>
-  <li>खराब मौसम में ride avoid करें</li>
-</ul>
-
-<hr>
-
 <h2>निष्कर्ष</h2>
 <p>
 मनाली बाइक ट्रिप सिर्फ एक सफर नहीं,
-बल्कि हर rider के लिए एक **life memory** है।
-सही planning और safety mindset के साथ
-ये trip हमेशा यादगार बनती है।
-</p>
-
-<p style="text-align:center;margin-top:35px">
-  <a href="../blog.html">← ब्लॉग पेज पर वापस जाएँ</a>
+बल्कि हर rider के लिए एक <strong>life memory</strong> है।
 </p>
 
 <section class="author-box">
   <img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya">
   <div>
     <h3>Rahul Haroliya</h3>
-    <p>
-      Indian bike traveler & blogger documenting
-      unexplored destinations across India.
-    </p>
+    <p>Indian bike traveler & blogger documenting unexplored destinations.</p>
     <p>
       <a href="/about.html">About</a> ·
       <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
