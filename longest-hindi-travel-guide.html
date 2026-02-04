@@ -17,22 +17,21 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Dark background for neon effect */
-    color: #39ff14; /* Neon green text */
+    background-color: #000; /* Dark background for contrast */
+    color: #fff; /* Normal white text */
     line-height: 1.6;
-    text-shadow: 0 0 4px #39ff14;
   }
 
   a {
-    color: #39ff14;
+    color: #fff; /* Links normal white */
     text-decoration: none;
     transition: 0.3s;
-    text-shadow: 0 0 6px #39ff14;
   }
 
   a:hover {
     text-decoration: underline;
-    text-shadow: 0 0 10px #39ff14;
+    color: #39ff14; /* Neon green only on hover */
+    text-shadow: 0 0 6px #39ff14;
   }
 
   .container {
@@ -45,8 +44,8 @@
   .hero-section {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #000, #050505);
-    box-shadow: 0 0 40px #39ff14;
+    background: linear-gradient(135deg, #000, #111);
+    box-shadow: 0 0 40px #39ff14; /* Neon glow only for hero */
   }
 
   .hero-title {
@@ -62,15 +61,14 @@
     margin: 40px auto;
     padding: 0 15px;
     font-size: 1.1rem;
-    color: #39ff14;
-    text-shadow: 0 0 3px #39ff14;
+    color: #fff; /* Normal white content */
   }
 
   .bharat-content h1,
   .bharat-content h2,
   .bharat-content h3 {
-    color: #39ff14;
-    text-shadow: 0 0 8px #39ff14;
+    color: #fff; /* Headings normal white */
+    text-shadow: none;
   }
 
   /* ===== Author Box Styling ===== */
@@ -82,9 +80,9 @@
     margin: 60px auto;
     padding: 25px;
     border-radius: 16px;
-    border: 2px solid #39ff14;
-    background: linear-gradient(145deg, #000, #050505);
-    box-shadow: 0 0 30px #39ff14;
+    border: 2px solid #39ff14; /* Neon green border */
+    background: linear-gradient(145deg, #0b0b0b, #111);
+    box-shadow: 0 0 30px #39ff14; /* Neon glow only for box */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
   }
@@ -112,30 +110,28 @@
 
   .author-info p {
     margin: 0 0 10px 0;
-    color: #39ff14;
-    text-shadow: 0 0 4px #39ff14;
+    color: #fff;
   }
 
   .author-socials a {
-    color: #39ff14;
+    color: #fff; /* normal white links in author box */
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
     transition: text-shadow 0.3s;
-    text-shadow: 0 0 6px #39ff14;
   }
 
   .author-socials a:hover {
     text-shadow: 0 0 12px #39ff14;
+    color: #39ff14;
   }
 
   /* ===== Footer Styling ===== */
   footer {
     text-align: center;
     font-size: 14px;
-    color: #39ff14;
+    color: #fff;
     margin: 50px 0 20px;
-    text-shadow: 0 0 8px #39ff14;
   }
 
   /* ===== Responsive ===== */
