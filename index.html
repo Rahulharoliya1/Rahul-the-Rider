@@ -239,6 +239,51 @@ footer {
   text-align: center;
   color: #aaa;
 }
+      /* ===== PRIMARY CTA : BHARAT-BHRAMAN ===== */
+.bharat-bhraman-btn {
+  background: linear-gradient(135deg, #39ff14, #00ffcc);
+  color: #000 !important;
+  font-weight: 900;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 44px;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  box-shadow:
+    0 0 18px rgba(57,255,20,0.7),
+    0 0 45px rgba(0,255,204,0.6);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bharat-bhraman-btn:hover {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow:
+    0 0 35px rgba(57,255,20,1),
+    0 0 80px rgba(0,255,204,0.9);
+}
+
+.bharat-bhraman-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.9),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.bharat-bhraman-btn:hover::before {
+  left: 130%;
+  transition: left 0.8s ease;
+}
 </style>
     
   <!-- Sliding Text Section -->
@@ -295,9 +340,15 @@ footer {
     </p>
 
     <div class="hero-buttons mt-4">
-      <a href="#gallery" class="btn btn-outline-success btn-lg">🏍️ View Rides</a>
-      <a href="blog.html" class="btn btn-outline-light btn-lg">📖 Read Stories</a>
-    </div>
+  <a href="#gallery" class="btn btn-outline-success btn-lg">🏍️ View Rides</a>
+  <a href="blog.html" class="btn btn-outline-light btn-lg">📖 Read Stories</a>
+
+  <a href="longest-hindi-travel-guide.html"
+     class="btn bharat-bhraman-btn ms-2 mt-3 mt-lg-0"
+    title="भारत का सबसे विस्तृत हिंदी यात्रा गाइड">
+     🇮🇳 भारत-भ्रमण
+  </a>
+</div>
   </div>
 </section>
 
