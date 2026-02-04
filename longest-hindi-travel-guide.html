@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -10,92 +11,126 @@
 
   <meta name="author" content="राहुल हरोलिया">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": {
-      "@type": "Person",
-      "name": "राहुल हरोलिया"
-    },
-    "headline": "भारत की सम्पूर्ण यात्रा मार्गदर्शिका",
-    "datePublished": "2026-02-04",
-    "description": "भारत यात्रा गाइड – सड़क, रेल, मोटरसाइकिल, बजट और राज्य-वार मार्गदर्शिका"
-  }
-  </script>
-
   <style>
+    /* ===== Global Styling ===== */
     body {
-      margin: 0;
-      background: #f5f6f7;
-      display: flex;
-      justify-content: center;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 900px;
-      background: #ffffff;
-      padding: 22px;
-      line-height: 1.7;
-      color: #222;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .post-meta {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 30px;
-    }
-    h2 {
-      margin-top: 38px;
-      color: #007BFF;
-    }
+
     a {
-      color: #007BFF;
+      color: #39ff14;
       text-decoration: none;
     }
 
-    .author-box {
-      display: flex;
-      gap: 15px;
-      background: #fff;
-      padding: 15px;
-      border-radius: 12px;
-      max-width: 720px;
-      margin: 45px auto 20px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
-    .author-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .author-info h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-    }
-    .author-info p {
-      margin: 0;
-      font-size: 14px;
-      color: #555;
+    a:hover {
+      text-decoration: underline;
     }
 
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000, #111);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      color: #39ff14;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Content Section ===== */
+    .bharat-content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 15px;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    /* ===== Author Box Styling ===== */
+    .author-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 25px;
+      border-radius: 16px;
+      border: 2px solid rgba(57, 255, 20, 0.5);
+      background: linear-gradient(145deg, #0b0b0b, #111);
+      box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      align-items: center;
+    }
+
+    .author-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(57, 255, 20, 0.7);
+    }
+
+    .author-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #39ff14;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+    }
+
+    .author-info h3 {
+      margin: 0 0 6px 0;
+      font-size: 1.4rem;
+      color: #39ff14;
+      text-shadow: 0 0 8px rgba(57, 255, 20, 0.7);
+    }
+
+    .author-info p {
+      margin: 0 0 10px 0;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .author-socials a {
+      color: #39ff14;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+      transition: text-shadow 0.3s;
+    }
+
+    .author-socials a:hover {
+      text-shadow: 0 0 8px rgba(57, 255, 20, 0.9);
+    }
+
+    /* ===== Footer Styling ===== */
     footer {
       text-align: center;
       font-size: 14px;
-      color: #666;
-      margin-top: 30px;
+      color: #aaa;
+      margin: 50px 0 20px;
+      text-shadow: 0 0 4px rgba(57, 255, 20, 0.5);
     }
 
-    @media (max-width: 768px) {
-    .container { padding: 15px; line-height: 1.7; }
-    h2 { font-size: 20px; margin-top: 28px; }
-    h3 { font-size: 18px; margin-top: 22px; }
-}
+    /* ===== Responsive ===== */
+    @media(max-width: 600px){
+      .author-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1600,25 +1635,27 @@
   </p>
   </div>
   
-  <section class="author-box">
-  <img src="../static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
-  <div class="author-info">
-    <h3>Rahul Haroliya</h3>
-    <p>
-      Indian bike traveler and blogger documenting unexplored destinations
-      and real travel experiences across India.
-    </p>
+  <!-- ===== Author Box ===== -->
+      <div class="author-box">
+        <img src="https://via.placeholder.com/100" alt="राहुल हरोलिया" class="author-img">
+        <div class="author-info">
+          <h3>राहुल हरोलिया</h3>
+          <p>यात्रा ब्लॉगर और भारत भ्रमण विशेषज्ञ। सड़क, रेल और मोटरसाइकिल यात्रा मार्गदर्शिका के लेखक।</p>
+          <div class="author-socials">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</section>
 
-<footer>
-  © <span id="year"></span> Rahul Haroliya. All rights reserved.
-</footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 राहुल हरोलिया. सभी अधिकार सुरक्षित.
+  </footer>
 
-</div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
