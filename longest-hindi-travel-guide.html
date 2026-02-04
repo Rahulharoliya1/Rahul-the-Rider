@@ -11,92 +11,129 @@
   <meta name="author" content="राहुल हरोलिया">
 
   <style>
+    /* ===== Global Styling ===== */
     body {
-      font-family: Mangal, Nirmala UI, serif;
-      line-height: 1.8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 20px;
-      background-color: #0b0b0b;
-  color: #dddddd;
     }
-    h1, h2, h3 {
-      margin-top: 40px;
-    }
-    .container{
-  max-width:900px;
-  margin:auto;
-}
-    h1 {
+
+    /* ===== Hero Section ===== */
+    .hero-section {
       text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000, #111);
     }
-    p {
-      margin: 15px 0;
-      text-align: justify;
+
+    .hero-title {
+      font-size: 2.5rem;
+      color: #39ff14;
+      margin-bottom: 10px;
     }
-    .author {
-      text-align: center;
+
+    /* ===== Content Section ===== */
+    .bharat-content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 15px;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    /* ===== Author Box Styling ===== */
+    .author-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 25px;
+      border-radius: 16px;
+      border: 2px solid rgba(57, 255, 20, 0.5);
+      background: linear-gradient(145deg, #0b0b0b, #111);
+      box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      align-items: center;
+    }
+
+    .author-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(57, 255, 20, 0.7);
+    }
+
+    .author-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #39ff14;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+    }
+
+    .author-info h3 {
+      margin: 0 0 6px 0;
+      font-size: 1.4rem;
+      color: #39ff14;
+      text-shadow: 0 0 8px rgba(57, 255, 20, 0.7);
+    }
+
+    .author-info p {
+      margin: 0 0 10px 0;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .author-socials a {
+      color: #39ff14;
+      text-decoration: none;
+      margin-right: 15px;
       font-weight: bold;
-      margin-bottom: 40px;
+      transition: text-shadow 0.3s;
     }
-    .note {
-      font-style: italic;
-      margin-top: 40px;
+
+    .author-socials a:hover {
+      text-shadow: 0 0 8px rgba(57, 255, 20, 0.9);
     }
-    /* ===== Bharat Bhraman Mini Hero ===== */
-.bharat-hero {
-  background: radial-gradient(circle at top, #0b0b0b, #000);
-  padding: 80px 20px 60px;
-  margin-bottom: 40px;
-}
 
-.bharat-hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #39ff14;
-  text-shadow: 0 0 18px rgba(57,255,20,0.9);
-}
+    /* ===== Footer Styling ===== */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      margin: 50px 0 20px;
+      text-shadow: 0 0 4px rgba(57, 255, 20, 0.5);
+    }
 
-.bharat-hero p {
-  font-size: 18px;
-  color: #cccccc;
-  margin-top: 10px;
-  letter-spacing: 1px;
-}
-    /* ===== Bharat Content Styling ===== */
-.bharat-content p {
-  font-size: 17px;
-  line-height: 1.9;
-  color: #dddddd;
-}
+    /* ===== Responsive ===== */
+    @media(max-width: 600px){
+      .author-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
 
-.bharat-content h1,
-.bharat-content h2,
-.bharat-content h3 {
-  color: #39ff14;
-}
-
-.bharat-content h2 {
-  margin-top: 70px;
-  font-size: 30px;
-  position: relative;
-}
-
-.bharat-content h2::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 3px;
-  background: #39ff14;
-  margin-top: 10px;
-  box-shadow: 0 0 14px rgba(57,255,20,0.9);
-}
-    .author {
-  color: #aaaaaa;
-  letter-spacing: 1px;
-}
   </style>
 </head>
-
 <body>
+  
   <section class="bharat-hero text-center">
   <div class="container">
     <h1>🇮🇳 भारत-भ्रमण</h1>
@@ -1597,5 +1634,27 @@
   </p>
   </div>
   
+  <!-- ===== Author Box ===== -->
+      <div class="author-box">
+        <img src="https://via.placeholder.com/100" alt="राहुल हरोलिया" class="author-img">
+        <div class="author-info">
+          <h3>राहुल हरोलिया</h3>
+          <p>यात्रा ब्लॉगर और भारत भ्रमण विशेषज्ञ। सड़क, रेल और मोटरसाइकिल यात्रा मार्गदर्शिका के लेखक।</p>
+          <div class="author-socials">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 राहुल हरोलिया. सभी अधिकार सुरक्षित.
+  </footer>
+
 </body>
 </html>
