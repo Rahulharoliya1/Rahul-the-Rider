@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>About Rahul Haroliya | The Joker Rider</title>
-  <meta name="description" content="Rahul Haroliya (The Joker Rider) is an Indian bike traveler and blogger who documents unexplored destinations and travel experiences across India.">
+  <meta name="description" content="Rahul Haroliya (The Joker Rider) is an Indian bike traveler and blogger who documents unexplored destinations and real travel experiences across India.">
 
-  <!-- ================= AUTHOR BOX CSS ================= -->
   <style>
-    .author-box {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      background: #ffffff;
-      padding: 15px;
-      border-radius: 12px;
-      max-width: 720px;
-      margin: 30px auto;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    :root{
+      --neon:#00ff66;
+      --bg:#0b0f0c;
+      --card:#121816;
+      --text:#e6f2ec;
+      --muted:#9fb3a8;
     }
 
-    .author-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: Arial, sans-serif;
+      line-height:1.9;
     }
 
-    .author-info h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-      color: #111;
+    main{
+      max-width:860px;
+      margin:50px auto;
+      padding:0 18px;
     }
 
-    .author-info p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.5;
-      color: #555;
+    article{
+      background:var(--card);
+      padding:34px;
+      border-radius:20px;
+      box-shadow:0 0 35px rgba(0,255,102,.08);
     }
 
-    .author-links {
-      margin-top: 6px;
+    h1{
+      text-align:center;
+      color:var(--neon);
+      font-size:32px;
+      margin-bottom:12px;
+      text-shadow:0 0 12px rgba(0,255,102,.35);
     }
 
-    .author-links a {
-      color: #1a73e8;
-      text-decoration: none;
-      font-size: 13px;
+    h2{
+      margin-top:44px;
+      color:var(--neon);
+      border-left:4px solid var(--neon);
+      padding-left:14px;
+      text-shadow:0 0 6px rgba(0,255,102,.25);
     }
 
-    @media (max-width: 600px) {
-      .author-img {
-        width: 60px;
-        height: 60px;
-      }
-      .author-info h3 {
-        font-size: 16px;
-      }
+    p{
+      font-size:16px;
+      margin:14px 0;
     }
 
-    @media (prefers-color-scheme: dark) {
-      .author-box {
-        background: #1e1e1e;
-      }
-      .author-info h3 {
-        color: #ffffff;
-      }
-      .author-info p {
-        color: #cccccc;
-      }
-      .author-links a {
-        color: #8ab4f8;
-      }
+    ul{
+      padding-left:22px;
+    }
+    li{
+      margin:8px 0;
+    }
+
+    a{
+      color:var(--neon);
+      text-decoration:none;
+      font-weight:600;
+    }
+    a:hover{
+      text-shadow:0 0 6px rgba(0,255,102,.6);
+    }
+
+    /* ===== AUTHOR BOX ===== */
+    .author-box{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      background:#0f1512;
+      padding:20px;
+      border-radius:18px;
+      margin:55px auto 20px;
+      box-shadow:0 0 28px rgba(0,255,102,.12);
+    }
+
+    .author-img{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--neon);
+      flex-shrink:0;
+    }
+
+    .author-info h3{
+      margin:0 0 6px;
+      color:var(--neon);
+    }
+
+    .author-info p{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .author-links{
+      margin-top:6px;
+      font-size:13px;
+    }
+
+    footer{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      margin:40px 0 20px;
+    }
+
+    @media(max-width:600px){
+      article{padding:22px}
+      h1{font-size:26px}
+      .author-box{flex-direction:row}
     }
   </style>
 
-  <!-- ================= SCHEMA ================= -->
-
-  <!-- About Page Schema -->
+  <!-- ===== SCHEMA ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -95,7 +141,6 @@
   }
   </script>
 
-  <!-- Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -104,108 +149,115 @@
     "name": "Rahul Haroliya",
     "alternateName": "The Joker Rider",
     "url": "https://rahulharoliya1.site/",
-    "image": "https://rahulharoliya1.site/images/rahul-haroliya.jpg",
-    "description": "Rahul Haroliya is an Indian bike traveler and blogger who documents unexplored destinations and travel experiences across India.",
+    "image": "https://rahulharoliya1.site/static/images/rahul-hero.jpg",
+    "description": "Indian bike traveler and blogger documenting unexplored destinations and real travel experiences across India.",
     "sameAs": [
       "https://www.instagram.com/rahulharoliya1/"
     ]
   }
   </script>
-
 </head>
 
 <body>
 
-  <h1>About Rahul Haroliya</h1>
+<main>
+<article>
 
-  <p>
-    <strong>Rahul Haroliya</strong>, popularly known as <em>The Joker Rider</em>, is one of India's passionate bike travelers, adventure enthusiasts, and digital creators. He has dedicated his life to exploring offbeat destinations, sharing real travel experiences, and inspiring others to embrace the joy of the open road. From the bustling streets of Indian cities to the serene backwaters and high-altitude mountain roads, Rahul's journey spans every corner of India, capturing stories that go beyond typical tourist experiences.
-  </p>
+<h1>About Rahul Haroliya</h1>
 
-  <h2>मेरी यात्रा</h2>
-  <p>
-    मैं <strong>राहुल हरोलिया</strong>, जिसे आप <em>The Joker Rider</em> के नाम से भी जानते हैं, बचपन से ही यात्रा और एडवेंचर का शौक़ीन रहा हूँ। बाइकिंग मेरे लिए सिर्फ एक सफर का माध्यम नहीं, बल्कि एक जीवनशैली बन गई है। भारत की सड़कों और गलियों में मैंने अनेकों यात्रा अनुभव हासिल किए हैं, जो सिर्फ दूरी नापने तक सीमित नहीं रहे। मेरी यात्राओं में स्थानीय संस्कृति, भोजन, त्योहार और लोगों की कहानियाँ शामिल होती हैं, जो मेरे ब्लॉग और सोशल मीडिया प्लेटफॉर्म पर दर्शकों के साथ साझा की जाती हैं।
-  </p>
+<p>
+<strong>Rahul Haroliya</strong>, जिन्हें लोग <em>The Joker Rider</em> के नाम से जानते हैं,
+एक Indian bike traveler और blogger हैं।
+उनका सफर सिर्फ जगहों तक सीमित नहीं है,
+बल्कि लोगों, संस्कृति और असली अनुभवों से जुड़ा है।
+</p>
 
-  <p>
-    मेरी पहली लंबी बाइक यात्रा की शुरुआत एक छोटे शहर से हुई थी। उस अनुभव ने मुझे यह सिखाया कि यात्रा केवल गंतव्य तक पहुँचने का नाम नहीं है, बल्कि रास्ते में आने वाले हर अनुभव, चुनौती और यादों का संग्रह है। हर यात्रा ने मेरी सोच को व्यापक किया और मुझे यह एहसास दिलाया कि भारत में हर राज्य, हर शहर और हर गांव में कुछ नया सीखने और देखने के लिए हमेशा है।
-  </p>
+<h2>मेरी यात्रा</h2>
 
-  <h2>यात्रा के माध्यम से संदेश</h2>
-  <p>
-    मेरे ब्लॉग और सोशल मीडिया प्लेटफॉर्म का उद्देश्य केवल यात्राओं को साझा करना नहीं है। मैं चाहता हूँ कि लोग यात्रा के माध्यम से आत्मनिर्भरता, साहस, और खुले दृष्टिकोण को अपनाएँ। बाइक यात्रा ने मुझे यह सिखाया कि जीवन में चुनौतियाँ आएँगी, लेकिन सही तैयारी और उत्साह के साथ उन्हें पार किया जा सकता है। यात्रा हमें धैर्य, निर्णय लेने की क्षमता, और प्राकृतिक सुंदरता के प्रति संवेदनशीलता सिखाती है।
-  </p>
+<p>
+मैं राहुल हरोलिया हूँ।
+बाइकिंग मेरे लिए केवल ट्रैवल नहीं,
+बल्कि एक लाइफस्टाइल है।
+भारत की सड़कों पर चलते हुए
+मैंने सीखा कि असली ज़िंदगी
+रास्तों में छुपी होती है।
+</p>
 
-  <h2>इस वेबसाइट पर क्या मिलेगा?</h2>
-  <p>
-    इस वेबसाइट का उद्देश्य मेरे यात्राओं के अनुभवों, सुझावों, और मार्गदर्शिकाओं को साझा करना है ताकि अन्य ट्रैवल प्रेमियों और बाइकर्स को मदद मिल सके। यहाँ आपको मिलेगा:
-  </p>
-  <ul>
-    <li>सफर की व्यक्तिगत कहानियाँ और ब्लॉग पोस्ट</li>
-    <li>बाइकिंग टिप्स, मेंटेनेंस और सुरक्षा सलाह</li>
-    <li>देश भर के रोड ट्रिप गाइड्स और लोकेशन गाइड्स</li>
-    <li>बाइक गियर, हैंलिंग और ट्रैवल गियर रिव्यू</li>
-    <li>अनजानी जगहों और छुपे हुए ट्रैवल डायमंड्स की जानकारी</li>
-  </ul>
+<p>
+मेरी पहली लंबी बाइक यात्रा
+एक छोटे शहर से शुरू हुई थी।
+उसी सफर ने मुझे यह सिखाया
+कि मंज़िल से ज़्यादा
+रास्ता मायने रखता है।
+</p>
 
-  <p>
-    प्रत्येक पोस्ट और गाइड को इस तरह लिखा गया है कि वह नए ट्रैवलर्स और अनुभवी बाइकर्स दोनों के लिए उपयोगी और रोचक हो। मेरा मानना है कि यात्रा एक अनुभव है, और इसे साझा करने से न केवल जानकारी मिलती है बल्कि प्रेरणा भी मिलती है।
-  </p>
+<h2>यात्रा के माध्यम से संदेश</h2>
 
-  <h2>मेरे पसंदीदा अनुभव</h2>
-  <p>
-    भारत में मेरी कुछ यादगार यात्राओं में शामिल हैं:  
-  </p>
-  <ul>
-    <li>हिमाचल प्रदेश और लद्दाख की ऊँची पहाड़ियों पर बाइक यात्रा</li>
-    <li>राजस्थान के रेगिस्तान और उनके स्थानीय त्यौहारों की खोज</li>
-    <li>उत्तर पूर्व के हरे-भरे जंगलों और नदी किनारे गांवों की खोज</li>
-    <li>साहसिक रास्तों और कम ज्ञात ट्रेक्स पर बाइकिंग</li>
-  </ul>
+<p>
+मेरे ब्लॉग और सोशल मीडिया का उद्देश्य
+सिर्फ घूमना दिखाना नहीं है।
+मैं लोगों को यह दिखाना चाहता हूँ
+कि ट्रैवल आत्मनिर्भरता,
+साहस और आत्मविश्वास सिखाता है।
+</p>
 
-  <p>
-    हर यात्रा में मैं नई कहानियाँ, नए दोस्त और नई संस्कृति सीखता हूँ। ये अनुभव मुझे प्रेरित करते हैं कि मैं अपने दर्शकों को वास्तविक और व्यावहारिक जानकारी दूँ, ताकि उनकी यात्रा भी सुरक्षित, मजेदार और यादगार हो।
-  </p>
+<h2>इस वेबसाइट पर क्या मिलेगा?</h2>
 
-  <h2>Connect</h2>
-  <p>
-    यात्रा के अनुभव साझा करने के अलावा, मैं अपने दर्शकों और फॉलोअर्स से जुड़ना भी बहुत पसंद करता हूँ। आप मुझसे इन प्लेटफॉर्म्स पर जुड़ सकते हैं:
-  </p>
-  <ul>
-    <li>Instagram: <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">@rahulharoliya1</a></li>
-    <li>Official Website: <a href="https://rahulharoliya1.site/" target="_blank">rahulharoliya1.site</a></li>
-  </ul>
+<ul>
+  <li>रियल बाइक ट्रिप गाइड्स</li>
+  <li>रूट और बजट डिटेल्स</li>
+  <li>बाइकिंग सेफ्टी और टिप्स</li>
+  <li>अनछुए और ऑफबीट डेस्टिनेशन</li>
+</ul>
 
-  <p>
-    मैं हमेशा नए ट्रैवलर्स को मार्गदर्शन देने, बाइकिंग टिप्स साझा करने, और यात्रा की प्रेरणा देने के लिए तैयार हूँ। अगर आप एक एडवेंचर प्रेमी हैं या बस यात्रा के बारे में सीखना चाहते हैं, तो इस वेबसाइट और सोशल मीडिया पेज को फॉलो करना आपके लिए बेहद उपयोगी साबित होगा।
-  </p>
+<h2>मेरे पसंदीदा अनुभव</h2>
 
-  <hr>
+<ul>
+  <li>लद्दाख और हिमाचल की हाई-एल्टीट्यूड राइड्स</li>
+  <li>राजस्थान के रेगिस्तान और लोकल कल्चर</li>
+  <li>नॉर्थ-ईस्ट इंडिया की अनदेखी सड़कें</li>
+</ul>
 
-  <!-- ================= AUTHOR BOX ================= -->
-  <section class="author-box">
-    <img src="static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+<h2>Connect</h2>
 
-    <div class="author-info">
-      <h3>Rahul Haroliya</h3>
-      <p>
-        Rahul Haroliya is an Indian entrepreneur, bike rider, adventure seeker, and digital content creator. Through his journeys, he inspires others to explore India and live life on the road. This is his official website where he shares travel stories, guides, and practical tips.
-      </p>
+<ul>
+  <li>Instagram: <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">@rahulharoliya1</a></li>
+  <li>Website: <a href="https://rahulharoliya1.site/" target="_blank">rahulharoliya1.site</a></li>
+</ul>
 
-      <p class="author-links">
-        <a href="/about.html">About</a> ·
-        <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
-      </p>
+<p>
+अगर मेरी कहानी
+किसी एक इंसान को भी
+बाइक स्टार्ट करने की हिम्मत दे दे,
+तो वही मेरी सबसे बड़ी जीत है।
+</p>
+
+</article>
+
+<section class="author-box">
+  <img src="static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+  <div class="author-info">
+    <h3>Rahul Haroliya</h3>
+    <p>
+      Indian bike traveler, adventure seeker and digital creator
+      sharing real journeys across India.
+    </p>
+    <div class="author-links">
+      <a href="/about.html">About</a> ·
+      <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
     </div>
-  </section>      
-
-  <div class="footer-bottom">
-    © <span id="year"></span> Rahul Haroliya · All Rights Reserved
   </div>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Rahul Haroliya · All Rights Reserved
 </footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
