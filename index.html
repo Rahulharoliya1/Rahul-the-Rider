@@ -119,7 +119,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  position: fixed;
+  position: relative;
   top: 56px; /* navbar ke just niche */
   left: 0;
   z-index: 900;
@@ -285,29 +285,26 @@ footer {
   transition: left 0.8s ease;
 }
       /* ===== FIXED NAVBAR FORCE ===== */
-.custom-navbar {
-  position: fixed !important;
+      .custom-navbar {
+  box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+}
+      .fixed-header{
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #000;
+  background: #000;
 }
-      .custom-navbar {
-  box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+
+.navbar{
+  background:#000;
 }
 </style>
-    
-  <!-- Sliding Text Section -->
-  <div class="sliding-text">
-  <span>
-    <img src="static/images/hayabusa%20(2).gif" alt="Hayabusa bike animation by Rahul Haroliya" style="height:70px; vertical-align:middle;" loading="lazy">
-    &nbsp; RAHUL HAROLIYA – The Joker Rider
-  </span>
-</div>
-    
+  
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <header class="fixed-header">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand fw-bold text-white" href="/">Rahul Haroliya</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -338,6 +335,15 @@ footer {
       </div>
   </nav>
 
+    <!-- Sliding Text Section -->
+  <div class="sliding-text">
+  <span>
+    <img src="static/images/hayabusa%20(2).gif" alt="Hayabusa bike animation by Rahul Haroliya" style="height:70px; vertical-align:middle;" loading="lazy">
+    &nbsp; RAHUL HAROLIYA – The Joker Rider
+  </span>
+</div>
+    
+</header>
     <section class="hero-section text-center">
   <div class="container">
     <h1 class="hero-title animate__animated animate__fadeInDown">
