@@ -100,7 +100,7 @@
 /* ===== BODY (merged safely) ===== */
 body {
   margin: 0;
-  padding-top: 96px; /* navbar (56) + sliding text space */
+  padding-top: 120px; /* navbar (56) + sliding text space */
   font-family: 'Rajdhani', sans-serif;
   color: #eee;
   background-color: #111;
@@ -284,6 +284,18 @@ footer {
   left: 130%;
   transition: left 0.8s ease;
 }
+      /* ===== FIXED NAVBAR FORCE ===== */
+.custom-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #000;
+}
+      .custom-navbar {
+  box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+}
 </style>
     
   <!-- Sliding Text Section -->
@@ -295,7 +307,7 @@ footer {
 </div>
     
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <div class="container">
       <a class="navbar-brand fw-bold text-white" href="/">Rahul Haroliya</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
