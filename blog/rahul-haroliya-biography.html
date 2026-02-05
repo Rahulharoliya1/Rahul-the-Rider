@@ -2,94 +2,142 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>Rahul Haroliya – मेरा सफर एक बाइक राइडर से ट्रैवल ब्लॉगर तक</title>
   <meta name="description" content="Rahul Haroliya की प्रेरणादायक जीवन यात्रा – एक आम बाइक राइडर से सफल ट्रैवल ब्लॉगर बनने तक की पूरी कहानी।">
   <meta name="author" content="Rahul Haroliya">
 
-  <link rel="stylesheet" href="../style.css" />
-
   <style>
-    body {
-      margin: 0;
-      background: #f5f6f7;
-      display: flex;
-      justify-content: center;
+    :root{
+      --neon:#00ff66;
+      --bg:#0b0f0c;
+      --card:#121816;
+      --text:#e6f2ec;
+      --muted:#9fb3a8;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:var(--bg);
       font-family: Arial, sans-serif;
-    }
-    .container {
-      max-width: 800px;
-      background: #ffffff;
-      padding: 28px;
-      line-height: 1.9;
-      color: #222;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .post-meta {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 30px;
-    }
-    h2 {
-      margin-top: 38px;
-      color: #007BFF;
-    }
-    a {
-      color: #007BFF;
-      text-decoration: none;
+      color:var(--text);
+      line-height:1.9;
     }
 
-    .author-box {
-      display: flex;
-      gap: 15px;
-      background: #fff;
-      padding: 15px;
-      border-radius: 12px;
-      max-width: 720px;
-      margin: 45px auto 20px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
-    .author-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .author-info h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-    }
-    .author-info p {
-      margin: 0;
-      font-size: 14px;
-      color: #555;
+    main{
+      max-width:820px;
+      margin:50px auto;
+      padding:0 18px;
     }
 
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 30px;
+    article{
+      background:var(--card);
+      padding:32px;
+      border-radius:18px;
+      box-shadow:0 0 30px rgba(0,255,102,.08);
     }
 
-    @media (prefers-color-scheme: dark) {
-      body { background:#121212; }
-      .container, .author-box { background:#1e1e1e; color:#e0e0e0; }
-      .author-info p, .post-meta, footer { color:#ccc; }
-      a { color:#8ab4f8; }
+    h1{
+      text-align:center;
+      color:var(--neon);
+      font-size:30px;
+      margin-bottom:8px;
+      text-shadow:0 0 10px rgba(0,255,102,.35);
+    }
+
+    .post-meta{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:35px;
+    }
+
+    h2{
+      margin-top:42px;
+      color:var(--neon);
+      border-left:4px solid var(--neon);
+      padding-left:12px;
+      text-shadow:0 0 6px rgba(0,255,102,.25);
+    }
+
+    p{
+      font-size:16px;
+      margin:14px 0;
+    }
+
+    ul{
+      padding-left:22px;
+    }
+    li{
+      margin:8px 0;
+    }
+
+    a{
+      color:var(--neon);
+      text-decoration:none;
+      font-weight:600;
+    }
+    a:hover{
+      text-shadow:0 0 6px rgba(0,255,102,.6);
+    }
+
+    .back-link{
+      text-align:center;
+      margin:40px 0;
+    }
+
+    .author-box{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      background:#0f1512;
+      padding:18px;
+      border-radius:16px;
+      margin:50px auto 0;
+      box-shadow:0 0 25px rgba(0,255,102,.12);
+    }
+
+    .author-box img{
+      width:72px;
+      height:72px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--neon);
+    }
+
+    .author-box h3{
+      margin:0 0 6px;
+      color:var(--neon);
+    }
+
+    .author-box p{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    footer{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      margin:40px 0 20px;
+    }
+
+    @media(max-width:600px){
+      article{padding:22px}
+      h1{font-size:24px}
     }
   </style>
 </head>
 
 <body>
-<div class="container">
 
 <main>
+<article>
+
 <h1>Rahul Haroliya – मेरा सफर एक बाइक राइडर से ट्रैवल ब्लॉगर तक</h1>
 
 <div class="post-meta">
@@ -98,108 +146,75 @@
 
 <p>
 नमस्ते! मेरा नाम <strong>Rahul Haroliya</strong> है।
-मैं कोई सेलिब्रिटी नहीं, न ही किसी बड़े शहर की चमक-दमक से आया हूँ।
-मैं बस एक ऐसा इंसान हूँ जिसे खुली सड़कें, बाइक की आवाज़
-और नए रास्तों की खोज से प्यार है।
+मैं कोई सेलिब्रिटी नहीं हूँ,
+बस एक ऐसा इंसान हूँ जिसे खुली सड़कें,
+बाइक की आवाज़ और नए रास्तों की खोज पसंद है।
 </p>
 
 <p>
-मेरे लिए ट्रैवल सिर्फ घूमना नहीं है।
-यह खुद को समझने का एक तरीका है,
-ज़िंदगी की भागदौड़ से बाहर निकलकर
-खुद से मिलने का जरिया है।
+मेरे लिए ट्रैवल सिर्फ घूमना नहीं,
+बल्कि खुद को समझने का एक तरीका है।
+जब ज़िंदगी भारी लगती है,
+तब बाइक ही मेरी थेरेपी बन जाती है।
 </p>
 
 <h2>शुरुआत कहाँ से हुई?</h2>
 
 <p>
 मैं अहमदाबाद, गुजरात से हूँ।
-मेरी ज़िंदगी भी बाकी लोगों जैसी ही थी —
-पढ़ाई, ज़िम्मेदारियाँ और एक तयशुदा रूटीन।
-लेकिन कहीं न कहीं अंदर से एक आवाज़ आती थी
-कि ज़िंदगी सिर्फ इतना ही नहीं है।
+ज़िंदगी एक तयशुदा रूटीन पर चल रही थी,
+लेकिन अंदर से कुछ और करने की बेचैनी थी।
 </p>
 
 <p>
-बाइक मेरे लिए शुरू में बस एक साधन थी,
-लेकिन धीरे-धीरे वह मेरी आज़ादी बन गई।
-जब भी मैं बाइक स्टार्ट करता,
-तो ऐसा लगता जैसे सारी टेंशन पीछे छूट रही हो।
-</p>
-
-<p>
-पहली लंबी राइड मैंने बिना किसी बड़ी तैयारी के की।
-न कोई महंगा गियर, न DSLR कैमरा,
-बस दिल में एक्सप्लोर करने की चाह।
-उस सफर ने मेरी सोच बदल दी।
+बाइक पहले सिर्फ एक साधन थी,
+फिर धीरे-धीरे वही मेरी आज़ादी बन गई।
+हर राइड मुझे खुद के और करीब ले जाती थी।
 </p>
 
 <h2>बाइकिंग से ट्रैवल की ओर</h2>
 
 <p>
-जैसे-जैसे राइड्स बढ़ती गईं,
-मैंने महसूस किया कि हर जगह की अपनी एक कहानी होती है।
-कुछ जगहें भीड़ से दूर होती हैं,
-कुछ रास्ते गूगल मैप पर नहीं मिलते,
-और कुछ अनुभव सिर्फ महसूस किए जा सकते हैं।
+जैसे-जैसे राइड्स बढ़ीं,
+मैंने महसूस किया कि हर रास्ते की अपनी कहानी होती है।
+कुछ कहानियाँ कैमरे में कैद होती हैं,
+और कुछ दिल में।
 </p>
 
 <p>
-मैंने मोबाइल से फोटो लेना शुरू किया,
-फिर वीडियो,
-फिर धीरे-धीरे लोगों से अपने अनुभव शेयर करने लगा।
-लोगों ने सवाल पूछने शुरू किए —
-रूट क्या था?
-बजट कितना आया?
-कहाँ रुके?
-</p>
-
-<p>
-यहीं से मुझे एहसास हुआ कि
-मेरा सफर किसी और के काम आ सकता है।
+लोग पूछने लगे – रूट क्या था,
+बजट कितना लगा,
+कहाँ रुके।
+तभी समझ आया कि मेरा अनुभव
+किसी और के काम आ सकता है।
 </p>
 
 <h2>RahulHaroliya1.site की शुरुआत</h2>
 
 <p>
-2025 में मैंने फैसला किया कि
-मैं अपनी सारी ट्रैवल जानकारी एक जगह इकट्ठा करूँगा।
-ऐसी जगह जहाँ कोई भी
-बिना झिझक सीख सके,
-समझ सके और ट्रैवल की प्लानिंग कर सके।
-</p>
-
-<p>
-RahulHaroliya1.site इसी सोच से बना।
-यह वेबसाइट सिर्फ ब्लॉग नहीं,
-मेरी जर्नी का डिजिटल रूप है।
-</p>
-
-<p>
-यहाँ आपको मिलेंगे:
+2025 में मैंने अपनी सारी जानकारी
+एक ही जगह पर शेयर करने का फैसला किया।
+ऐसी जगह जहाँ रियल एक्सपीरियंस हों,
+ना कि फेक ट्रैवल।
 </p>
 
 <ul>
   <li>बाइक ट्रिप गाइड्स</li>
   <li>रूट और बजट डिटेल्स</li>
   <li>पैकिंग लिस्ट</li>
-  <li>रियल फोटोज़ और अनुभव</li>
+  <li>रियल फोटो और अनुभव</li>
 </ul>
 
 <h2>Challenges और सच्चाई</h2>
 
 <p>
 यह सफर आसान नहीं था।
-कई बार मन में शक आया —
-क्या सही कर रहा हूँ?
-क्या लोग पढ़ेंगे?
-क्या यह आगे जाकर कुछ बनेगा?
+कभी बाइक खराब हुई,
+कभी नेटवर्क नहीं मिला,
+कभी खुद पर शक हुआ।
 </p>
 
 <p>
-कभी नेटवर्क नहीं मिलता,
-कभी मौसम साथ नहीं देता,
-कभी बाइक जवाब दे देती है।
 लेकिन हर मुश्किल ने
 मुझे और मजबूत बनाया।
 </p>
@@ -207,70 +222,50 @@ RahulHaroliya1.site इसी सोच से बना।
 <h2>मेरा मिशन</h2>
 
 <p>
-मेरा एक ही मिशन है —
-लोगों को दिखाना कि ट्रैवल सिर्फ अमीरों के लिए नहीं।
-अगर आपके पास बाइक है,
-थोड़ी हिम्मत है
-और सीखने की चाह है,
+मेरा मिशन साफ है –
+ट्रैवल को रियल और एक्सेसिबल बनाना।
+अगर आपके पास बाइक है
+और दिल में जुनून,
 तो आप भी निकल सकते हैं।
 </p>
 
 <p>
-मैं खासकर युवाओं को प्रेरित करना चाहता हूँ
-कि वे अपने सपनों को
-“कभी बाद में” पर ना छोड़ें।
-</p>
-
-<h2>सोशल मीडिया और आगे का सफर</h2>
-
-<p>
-आज मैं Instagram और YouTube पर
-<strong>@rahulharoliya1</strong> नाम से एक्टिव हूँ।
-यहाँ मैं रील्स, शॉर्ट्स और
-रियल ट्रैवल मोमेंट्स शेयर करता हूँ।
+अगर मेरी कहानी
+किसी एक इंसान को भी
+राइड पर निकलने की हिम्मत दे दे,
+तो वही मेरी सबसे बड़ी जीत है।
 </p>
 
 <p>
-आगे का सपना है —
-भारत के अनछुए रास्तों को एक्सप्लोर करना
-और उन्हें दुनिया के सामने लाना।
-</p>
-
-<p>
-अगर मेरी कहानी किसी एक इंसान को भी
-सफर पर निकलने की हिम्मत देती है,
-तो मैं खुद को सफल मानता हूँ।
-</p>
-
-<p>
-<em>धन्यवाद,</em><br>
 <strong>– Rahul Haroliya</strong>
 </p>
-</main>
 
-<p style="text-align:center; margin:40px 0;">
+</article>
+
+<div class="back-link">
   <a href="../blog.html">← ब्लॉग पेज पर वापस जाएँ</a>
-</p>
+</div>
 
 <section class="author-box">
-  <img src="../static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
-  <div class="author-info">
+  <img src="../static/images/rahul-hero.jpg" alt="Rahul Haroliya">
+  <div>
     <h3>Rahul Haroliya</h3>
     <p>
-      Indian bike traveler and blogger documenting unexplored destinations
-      and real travel experiences across India.
+      Indian bike traveler & blogger sharing real journeys,
+      routes and raw travel experiences.
     </p>
   </div>
 </section>
+
+</main>
 
 <footer>
   © <span id="year"></span> Rahul Haroliya. All rights reserved.
 </footer>
 
-</div>
-
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
