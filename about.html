@@ -36,7 +36,9 @@
       background:var(--card);
       padding:34px;
       border-radius:20px;
-      box-shadow:0 0 35px rgba(0,255,102,.08);
+      box-shadow:
+        0 0 25px rgba(0,255,102,.18),
+        0 0 60px rgba(0,255,102,.08);
     }
 
     /* ABOUT LABEL */
@@ -47,7 +49,10 @@
       letter-spacing:3px;
       text-transform:uppercase;
       margin-bottom:6px;
-      opacity:.9;
+      opacity:.95;
+      text-shadow:
+        0 0 8px rgba(0,255,102,.7),
+        0 0 18px rgba(0,255,102,.5);
     }
 
     h1{
@@ -55,7 +60,9 @@
       color:var(--neon);
       font-size:32px;
       margin-bottom:12px;
-      text-shadow:0 0 12px rgba(0,255,102,.35);
+      text-shadow:
+        0 0 10px rgba(0,255,102,.6),
+        0 0 22px rgba(0,255,102,.45);
     }
 
     h2{
@@ -63,7 +70,8 @@
       color:var(--neon);
       border-left:4px solid var(--neon);
       padding-left:14px;
-      text-shadow:0 0 6px rgba(0,255,102,.25);
+      text-shadow:
+        0 0 8px rgba(0,255,102,.6);
     }
 
     p{
@@ -84,19 +92,33 @@
       font-weight:600;
     }
     a:hover{
-      text-shadow:0 0 6px rgba(0,255,102,.6);
+      text-shadow:
+        0 0 6px rgba(0,255,102,.8),
+        0 0 14px rgba(0,255,102,.6);
     }
 
-    /* AUTHOR BOX */
+    /* AUTHOR BOX – FULL NEON GLOW */
     .author-box{
       display:flex;
       gap:18px;
       align-items:center;
       background:#0f1512;
-      padding:20px;
+      padding:22px;
       border-radius:18px;
       margin:55px auto 20px;
-      box-shadow:0 0 28px rgba(0,255,102,.12);
+      border:1px solid rgba(0,255,102,.6);
+      box-shadow:
+        0 0 20px rgba(0,255,102,.55),
+        0 0 55px rgba(0,255,102,.35),
+        inset 0 0 18px rgba(0,255,102,.25);
+      transition:all .35s ease;
+    }
+
+    .author-box:hover{
+      box-shadow:
+        0 0 30px rgba(0,255,102,.85),
+        0 0 80px rgba(0,255,102,.6),
+        inset 0 0 25px rgba(0,255,102,.4);
     }
 
     .author-img{
@@ -105,12 +127,16 @@
       border-radius:50%;
       object-fit:cover;
       border:2px solid var(--neon);
+      box-shadow:
+        0 0 12px rgba(0,255,102,.8),
+        0 0 30px rgba(0,255,102,.55);
       flex-shrink:0;
     }
 
     .author-info h3{
       margin:0 0 6px;
       color:var(--neon);
+      text-shadow:0 0 10px rgba(0,255,102,.7);
     }
 
     .author-info p{
@@ -228,6 +254,7 @@
   <ul>
     <li>Instagram: <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">@rahulharoliya1</a></li>
     <li>Website: <a href="https://rahulharoliya1.site/" target="_blank">rahulharoliya1.site</a></li>
+    <li>Facebook: <a href="https://facebook.com/rahul.haroliya.18/" target="_blank">rahul.haroliya.18</a></li>
   </ul>
 
   <p>
@@ -252,6 +279,7 @@
     <div class="author-links">
       <a href="/about.html">About</a> ·
       <a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a>
+      <a href="https://facebook.com/rahul.haroliya.18/" target="_blank">Facebook</a>
     </div>
   </div>
 </section>
