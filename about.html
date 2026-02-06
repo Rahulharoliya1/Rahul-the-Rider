@@ -43,17 +43,32 @@
 
     /* ABOUT LABEL */
     .about-label{
-      text-align:center;
-      color:var(--neon);
-      font-size:20px;
-      letter-spacing:3px;
-      text-transform:uppercase;
-      margin-bottom:6px;
-      opacity:.95;
-      text-shadow:
-        0 0 8px rgba(0,255,102,.7),
-        0 0 18px rgba(0,255,102,.5);
-    }
+  text-align:center;
+  color:var(--neon);
+  font-size:26px;              /* size bada */
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:14px;
+  font-weight:700;
+  position:relative;
+  text-shadow:
+    0 0 10px rgba(0,255,102,.9),
+    0 0 25px rgba(0,255,102,.6);
+}
+
+/* NEON UNDERLINE */
+.about-label::after{
+  content:"";
+  display:block;
+  width:120px;
+  height:3px;
+  margin:10px auto 0;
+  background:var(--neon);
+  border-radius:10px;
+  box-shadow:
+    0 0 10px rgba(0,255,102,.9),
+    0 0 25px rgba(0,255,102,.7);
+}
 
     h1{
       text-align:center;
