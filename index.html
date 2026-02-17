@@ -167,6 +167,22 @@
       transform: skewX(-25deg);
     }
     .bharat-bhraman-btn:hover::before { left: 130%; transition: left 0.8s ease; }
+    .nav-logo {
+  height: 45px;
+  width: auto;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 6px #00ff55);
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 35px;
+  }
+}
   </style>
 </head>
 <body>
@@ -174,7 +190,9 @@
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container">
-        <a class="navbar-brand fw-bold text-white" href="/">Rahul Haroliya</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="images/logo.png" alt="Rahul Haroliya Logo" class="nav-logo">
+</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -222,9 +240,11 @@
         new Typed("#typed-text", {
           strings: [
             "The Joker Rider 🎭",
-            "Adventure Rider 🚴‍♂️",
-            "Photographer 📸",
-            "Blogger ✍️"
+"Adventure Rider 🚴‍♂️",
+"All India Traveler 🇮🇳",
+"Content Creator 🎬",
+"Photographer 📸",
+"Travel Blogger ✍️"
           ],
           typeSpeed: 50,
           backSpeed: 25,
@@ -425,24 +445,6 @@
     </div>
   </div>
 </section>
-     
-    <!-- Medium Zoom JS -->
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
-
-<script>
-    mediumZoom('.gallery a img', {
-      margin: 24,
-      background: 'rgba(0,0,0,0.8)'
-    });
-  </script>
-
-  <!-- Scroll Shadow JS -->
-<script>
-window.addEventListener("scroll", function() {
-  const navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
 
   <footer>
   <p>
