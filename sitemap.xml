@@ -1,98 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://rahulharoliya1.site/blog/bike-trip-to-manali.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/hidden-waterfalls-in-gujarat.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/solo-bike-trip-safety-guide.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/rann-of-kutch-bike-tour.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/best-food-stops-on-ahmedabad-to-mumbai.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/monsoon-bike-trip-destinations.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/maintenance-checklist-before-long-ride.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/top-7-bike-routes-in-west-india.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/how-to-plan-budget-bike-trip.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/sasan-gir-bike-expedition.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/wildlife-safari-bike-trip.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/desert-ride-tips-and-routes.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/must-have-bike-accessories-2025.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/first-time-bike-tour-guide.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/ahmedabad-to-goa-road-trip.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://rahulharoliya1.site/blog/top-night-rides-in-gujarat.html</loc>
-<lastmod>2025-07-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://rahulharoliya1.site/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/about.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/news.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/contact.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/privacy-policy.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog Posts -->
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/bike-trip-to-manali.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/hidden-waterfalls-in-gujarat.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/solo-bike-trip-safety-guide.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/rann-of-kutch-bike-tour.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/best-food-stops-on-ahmedabad-to-mumbai.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/monsoon-bike-trip-destinations.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/maintenance-checklist-before-long-ride.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/top-7-bike-routes-in-west-india.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/how-to-plan-budget-bike-trip.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/sasan-gir-bike-expedition.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/wildlife-safari-bike-trip.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/desert-ride-tips-and-routes.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/must-have-bike-accessories-2025.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/first-time-bike-tour-guide.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/ahmedabad-to-goa-road-trip.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rahulharoliya1.site/blog/top-night-rides-in-gujarat.html</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
