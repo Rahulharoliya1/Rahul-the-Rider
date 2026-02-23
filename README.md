@@ -1,17 +1,26 @@
-<h2 class="mb-4 text-center">About Rahul</h2>
-      <p class="text-center">
-        Rahul Haroliya is not just a bike rider—he's a passionate adventurer with a relentless spirit for exploring the unbeaten paths.
+<h2 class="mb-4 text-center">About Rahul Haroliya</h2>
+
 <p class="text-center">
-Rahul Haroliya is an Indian entrepreneur, bike rider and digital creator.
-This is the official website of Rahul Haroliya.
+Rahul Haroliya is a National Travel Creator, Indian entrepreneur, and motorcycle explorer known for documenting authentic road journeys across India.
+Popularly recognized as “The Joker Rider,” Rahul captures real travel experiences from winding Himalayan mountain roads to scenic coastal highways.
+</p>
+
 <p class="text-center">
-From winding mountain roads to serene coastal highways, Rahul’s journeys are fueled by his love for freedom and the thrill of discovery.
-      </p>
-      <p class="text-center">
-        Every ride is more than just a trip; it’s a story waiting to be told, a memory to be cherished.
-        With his trusted bike as a companion, Rahul inspires others to break free from routine and embrace the open road.
-      </p>
-      <p class="text-center">
-        Join Rahul as he shares breathtaking landscapes, heartfelt moments, and tips for fellow riders seeking the ultimate biking experience.
-        His mission? To ignite the wanderer in all of us and prove that the best journeys are those that challenge and change us.
-      </p>
+With a passion for long-distance riding and cinematic storytelling, Rahul shares powerful road trip narratives, practical travel insights, and inspiring adventure content.
+His mission is to encourage explorers to discover India beyond typical tourist destinations and embrace the freedom of the open road.
+</p>
+
+<p class="text-center">
+Through his digital platforms and official website, Rahul Haroliya is building a growing national travel brand focused on adventure, authenticity, and responsible exploration.
+He collaborates with travel communities, tourism campaigns, and lifestyle brands to promote meaningful travel storytelling.
+</p>
+
+<p class="text-center">
+As a motorcycle travel blogger and digital storyteller, Rahul believes that every journey has the power to transform perspectives and create unforgettable memories.
+His vision is to inspire the next generation of Indian riders to explore fearlessly and tell their own travel stories.
+</p>
+<h3 class="text-center mt-4">Connect With Rahul</h3>
+<p class="text-center">
+Official Website: https://rahulharoliya1.site<br>
+Instagram | YouTube | LinkedIn
+</p>
