@@ -509,9 +509,18 @@
 <section id="contact" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Get in Touch</h2>
-    <p class="text-center">
-      📧 Email: <a href="mailto:rahulharoliya1@gmail.com">rahulharoliya1@gmail.com</a>
-    </p>
+    <p class="text-center" id="email-link"></p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var user = "rahulharoliya1";
+    var domain = "gmail.com";
+    var email = user + "@" + domain;
+
+    document.getElementById("email-link").innerHTML =
+      '📧 Email: <a href="mailto:' + email + '">' + email + '</a>';
+  });
+</script>
     <p class="text-center">Have a project, idea, or just want to say hello? Fill the form below and I'll get back to you soon!</p>
     <div class="row justify-content-center">
       <div class="col-md-8">
