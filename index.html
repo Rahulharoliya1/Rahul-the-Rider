@@ -119,25 +119,30 @@
     .navbar.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
 
     .sliding-text {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid #ffffff14;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden;   /* essential */
   white-space: nowrap;
   background: #000;
   color: white;
-  padding: 4px 0;        /* 10px se kam karke 4px ya 5px kar do */
+  padding: 4px 0;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   position: relative;
-  left: 0;
   z-index: 900;
 }
+
 .sliding-text span {
-  display: inline-block;
-  padding-right: 100%;
-  animation: slide 10s linear infinite;
+  display: inline-block; /* must be inline-block */
+  padding-right: 100%;   /* must keep for slide */
+  animation: slide 10s linear infinite; /* slide animation */
   font-size: 24px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
     .hero-section { min-height: 70vh; display: flex; align-items: center; background: radial-gradient(circle at top, #0b0b0b, #000); text-align: center; }
