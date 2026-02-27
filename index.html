@@ -119,22 +119,26 @@
     .navbar.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
 
     .sliding-text {
-      border-top: 1px solid rgba(255,255,255,0.08);
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      background: #000;
-      color: white;
-      padding: 10px 0;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      position: relative;
-      left: 0;
-      z-index: 900;
-    }
-    .sliding-text span { display: inline-block; padding-right: 100%; animation: slide 10s linear infinite; font-size: 24px; }
-    @keyframes slide { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+  border-top: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000;
+  color: white;
+  padding: 4px 0;        /* 10px se kam karke 4px ya 5px kar do */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 0;
+  z-index: 900;
+}
+.sliding-text span {
+  display: inline-block;
+  padding-right: 100%;
+  animation: slide 10s linear infinite;
+  font-size: 24px;
+}
 
     .hero-section { min-height: 70vh; display: flex; align-items: center; background: radial-gradient(circle at top, #0b0b0b, #000); text-align: center; }
     .hero-title { font-size: 56px; font-weight: 700; color: #39ff14; text-shadow: 0 0 20px rgba(57,255,20,0.8); }
