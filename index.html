@@ -112,38 +112,44 @@
       perspective: 1000px;
     }
 
-    header.sticky-top { position: sticky; top: 0; z-index: 10000; }
+    header.sticky-top { padding-top: 0; }
     .navbar { background-color: #000 !important; z-index: 9999; transition: box-shadow 0.3s; }
     .navbar a { color: #fff !important; display: inline-block; transition: transform 0.3s ease; transform-style: preserve-3d; }
     .navbar a:hover { transform: rotateX(10deg) translateZ(10px); color: #39ff14 !important; }
     .navbar.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
 
     .sliding-text {
-  border-top: 1px solid #ffffff14;
+  border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
-  overflow: hidden;   /* essential */
+  overflow: hidden;
   white-space: nowrap;
   background: #000;
   color: white;
-  padding: 4px 0;
+  padding: 2px 0;     /* top/bottom padding kam */
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   position: relative;
-  z-index: 900;
+  top: 0;
+  margin-top: -8px;   /* extra space hataya */
+  z-index: 999;
 }
 
 .sliding-text span {
-  display: inline-block; /* must be inline-block */
-  padding-right: 100%;   /* must keep for slide */
-  animation: slide 10s linear infinite; /* slide animation */
-  font-size: 24px;
+  display: inline-block;
+  padding-right: 100%;
+  animation: slide 10s linear infinite;
+  font-size: 20px;
 }
 
+/* Slide animation */
 @keyframes slide {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
+/* Optional: navbar hover effect */
+.navbar a:hover { color: #39ff14 !important; }
 
     .hero-section { min-height: 70vh; display: flex; align-items: center; background: radial-gradient(circle at top, #0b0b0b, #000); text-align: center; }
     .hero-title { font-size: 56px; font-weight: 700; color: #39ff14; text-shadow: 0 0 20px rgba(57,255,20,0.8); }
@@ -221,7 +227,7 @@
     }
     .bharat-bhraman-btn:hover::before { left: 130%; transition: left 0.8s ease; }
     .nav-logo {
-  height: 80px;   /* 3x bigger */
+  height: 90px;   /* 3x bigger */
   width: auto;
   transition: 0.3s ease;
 }
@@ -249,37 +255,38 @@
 </head>
 <body>
   <!-- Navbar + Sliding Text -->
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-  <img src="/static/images/logo.png" alt="Rahul Haroliya Logo" class="nav-logo">
-</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="about.html" aria-current="page">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
-            <li class="nav-item"><a class="nav-link" href="disclaimer.html">Disclaimer</a></li>
-            <li class="nav-item"><a class="nav-link" href="terms.html">Terms & Conditions</a></li>
-          </ul>
-        </div>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-0">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="/static/images/logo.png" alt="Rahul Haroliya Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+          <li class="nav-item"><a class="nav-link" href="disclaimer.html">Disclaimer</a></li>
+          <li class="nav-item"><a class="nav-link" href="terms.html">Terms & Conditions</a></li>
+        </ul>
       </div>
-    </nav>
-
-    <div class="sliding-text">
-      <span>
-        <img src="static/images/hayabusa%20(2).gif" alt="Hayabusa bike animation" style="height:70px; vertical-align:middle;" loading="lazy">
-        &nbsp; RAHUL HAROLIYA – The Joker Rider
-      </span>
     </div>
-  </header>
+  </nav>
+
+  <!-- Sliding Text -->
+  <div class="sliding-text">
+    <span>
+      <img src="static/images/hayabusa%20(2).gif" alt="Hayabusa bike animation" style="height:50px; vertical-align:middle;" loading="lazy">
+      &nbsp; RAHUL HAROLIYA – The Joker Rider
+    </span>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section class="hero-section text-center">
