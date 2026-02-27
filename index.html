@@ -342,16 +342,13 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   if (typeof mediumZoom !== "undefined") {
-    mediumZoom('.zoom-img img', {
+    const zoom = mediumZoom('.zoom-img img', {
       margin: 24,
       background: 'rgba(0,0,0,0.9)',
       scrollOffset: 40,
-      metaClick: false // click karte hi close ho jaaye
+      metaClick: false
     });
-  }
-});
 
-    // Click anywhere to close
     zoom.on('open', (event) => {
       const overlay = document.querySelector('.medium-zoom-overlay');
       overlay.addEventListener('click', () => zoom.close());
