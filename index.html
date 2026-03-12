@@ -21,8 +21,12 @@
     "brand": {
   "@type": "Brand",
   "name": "The Joker Rider"
+    "logo": "https://rahulharoliya1.site/static/images/logo.png"
 },
+    
+    
   "url": "https://rahulharoliya1.site/",
+    "identifier": "Rahul Haroliya - The Joker Rider",
     "mainEntityOfPage": {
   "@type": "WebPage",
   "@id": "https://rahulharoliya1.site/"
@@ -276,6 +280,39 @@ margin-right:8px;
   transform: scale(1.05);
 }
 
+    .navbar-nav{
+  background:#001a00;
+  padding:12px 25px;
+  border-radius:40px;
+  position:relative;
+}
+
+.navbar-nav::before{
+  content:"";
+  position:absolute;
+  left:-40px;
+  top:0;
+  width:80px;
+  height:100%;
+  background:#001a00;
+  border-radius:0 50px 50px 0;
+}
+
+.navbar-nav .nav-link{
+  color:#39ff14 !important;
+  font-weight:600;
+  padding:8px 14px;
+  transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+  text-shadow:
+  0 0 5px #39ff14,
+  0 0 10px #39ff14,
+  0 0 20px #39ff14,
+  0 0 40px #39ff14;
+}
+
 @media (max-width: 768px) {
   .nav-logo{
 height:70px;
@@ -359,8 +396,8 @@ height="90">
       </h1>
       <p>Indian Motorcycle Travel Blogger & Digital Content Creator</p>
 
-<p style="position:absolute; left:-9999px;">
-Rahul Haroliya is an Indian Motorcycle Travel Blogger and Digital Content Creator based in Ahmedabad, Gujarat, India, known as The Joker Rider.
+<p class="visually-hidden">
+Rahul Haroliya is an Indian Motorcycle Travel Blogger and Digital Content Creator based in Ahmedabad, Gujarat, India.
 </p>
       <p id="typed-text"></p>
       <p class="hero-tagline">Riding beyond roads • Capturing real journeys • Living the ride</p>
@@ -435,7 +472,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="carousel-item active">
       <img src="static/images/daman.jpg"
 class="d-block w-100"
-alt="Daman"
+alt="Motorcycle Travel in Daman by Rahul Haroliya"
 loading="eager"
 fetchpriority="high"
 width="1400"
