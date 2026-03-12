@@ -2,20 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Rahul Haroliya – Media & Articles</title>
-<meta name="description" content="Articles and media mentions about Rahul Haroliya, also known as The Joker Rider, an Indian motorcycle travel blogger from Ahmedabad.">
+
+<meta name="description" content="Media mentions and articles about Rahul Haroliya, popularly known as The Joker Rider, an Indian motorcycle travel blogger from Ahmedabad.">
+
+<style>
+body {margin:0; font-family:Arial, sans-serif; background:#0b0b0b; color:#e5e5e5; line-height:1.8;}
+main {max-width:900px; margin:auto; padding:30px 20px;}
+
+h1 {color:#39ff14; text-align:center; text-shadow:0 0 15px rgba(57,255,20,0.8);}
+h2 {color:#39ff14; margin-top:40px; text-shadow:0 0 8px rgba(57,255,20,0.6);}
+
+p, li {color:#ccc; font-size:16px;}
+
+ul {padding-left:20px;}
+
+a {color:#39ff14; text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+.author-box {
+display:flex;
+gap:15px;
+background:#000;
+padding:18px;
+border-radius:14px;
+margin:50px auto;
+border:1px solid rgba(57,255,20,.3);
+box-shadow:0 0 20px rgba(57,255,20,.25);
+}
+
+.author-img {
+width:70px;
+height:70px;
+border-radius:50%;
+border:2px solid #39ff14;
+}
+
+footer {
+text-align:center;
+font-size:14px;
+color:#aaa;
+margin:40px 0 20px;
+}
+</style>
 </head>
 
 <body>
 
+<main>
+
 <h1>Rahul Haroliya – Media & Articles</h1>
 
 <p>
-Rahul Haroliya (The Joker Rider) is an Indian motorcycle travel blogger from Ahmedabad, Gujarat.
-Below are articles and stories about his motorcycle travel journey.
+<strong>Rahul Haroliya</strong>, popularly known as <strong>The Joker Rider</strong>, is an Indian motorcycle travel blogger and digital content creator from Ahmedabad, Gujarat.  
+Below are featured articles and media stories about his motorcycle travel journey and travel blogging work.
 </p>
 
-<h2>Articles</h2>
+<h2>Featured Articles</h2>
 
 <ul>
 
@@ -27,11 +72,45 @@ Who is Rahul Haroliya (The Joker Rider) – Indian Motorcycle Travel Blogger
 
 <li>
 <a href="https://medium.com/@rahulharoliya1_8119/latest" target="_blank">
-More Articles by Rahul Haroliya on Medium
+Read More Articles by Rahul Haroliya on Medium
 </a>
 </li>
 
 </ul>
+
+
+<section class="author-box">
+
+<img src="/static/images/rahul-hero.jpg" alt="Rahul Haroliya" class="author-img">
+
+<div>
+
+<h3>Rahul Haroliya (The Joker Rider)</h3>
+
+<p>
+Rahul Haroliya, also known as The Joker Rider, is an Indian motorcycle travel blogger and entrepreneur from Ahmedabad, Gujarat. Through his journeys he documents real road experiences, travel stories, and unexplored routes across India.
+</p>
+
+<p>
+<a href="/about.html">About</a> ·
+<a href="https://www.instagram.com/rahulharoliya1/" target="_blank">Instagram</a> ·
+<a href="https://medium.com/@rahulharoliya1_8119" target="_blank">Medium</a>
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+© <span id="year"></span> Rahul Haroliya. All rights reserved.
+</footer>
+
+</main>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
